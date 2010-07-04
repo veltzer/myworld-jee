@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+
+<!--
+TODO:
+* not all UTF are cought by check.pl - do it.
+* do a validity check on all jsp, xml and html files in the repository.
+* stop the svn thingy running all the time even when there was no change.
+* check version of tomcat to be 5.5 (exit otherwise).
+* print hour when build starts and ends.
+	use information to be placed in version.htm
+* testing (get to fixup of all the tests - all tests should pass).
+* local deploy + local undeploy should delete old data.
+* local config tomcat (add user).
+* google API key to be generated as part of setup.
+* compilation via jasper and the compile target of the tomcat remote deployer (see the tomcat remote deployer distribution documentation for help).
+* Verification of the war file (make sure that no unresolved classes exist).
+* XML validity check of all XMLs with DTD or Schemas (if there are any to be found).
+* All text files must be ISO 8859-1 plain text files with no CRLF and eol on last line.
+* add a check that forces into a specific operating system for a developer.
+-->
+
+<project name="meta" default="default">
+	<!-- reading the properties file -->
+	<!-- xmlproperty file="local_properties.xml" semanticAttributes="true"/-->
+	<property file="local.properties"/>
+	<xmlproperty file="build_properties.xml" semanticAttributes="true"/>
+	<!-- lets define some paths (source, various jar paths) -->
+	<path id="source-path">
+		<pathelement path="src"/>
+	</path>
+	<!-- all jars -->
+	<path id="rlib-path">
+		<fileset dir="rlib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<!-- jars which are needed for compilation from various sources -->
+	<path id="compilation-jars">
+		<fileset dir="lib">
+			<include name="junit-4.1.jar"/>
+			<include name="jmock-1.1.0.jar"/>
+			<include name="httpunit.jar"/>
+		</fileset>
+	</path>
+	<!-- these jars are used to execute tomcat tasks and are from the tomcat distribution -->
+	<path id="tomcat-jars">
+		<fileset dir="lib">
+			<include name="catalina-ant.jar"/>
+			<include name="commons-el.jar"/>
+			<include name="jasper-compiler.jar"/>
+			<include name="jsp-api.jar"/>
+			<include name="servlet-api.jar"/>
+			<include name="catalina.jar"/>
+			<include name="bootstrap.jar"/>
+		</fileset>
+	</path>
+	<!-- these jars are from the ant deployer package -->
+	<path id="tomcat-deployer-jars">
+		<fileset dir="lib">
+			<include name="catalina-deployer.jar"/>
+			<include name="commons-logging.jar"/>
+			<include name="jasper-runtime.jar"/>
+			<include name="servlet-api.jar"/>
+		</fileset>
+	</path>
+	<!-- these jars are used by ant for tasks which are not part of ant core -->
+	<!-- they come from a variety of sources: tomcat, svn and mysql -->
+	<path id="alib-path">
+		<fileset dir="alib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<!-- these jars came from the java distribution -->
+	<path id="java-jars">
+		<fileset dir="alib">
+			<include name="tools.jar"/>
+		</fileset>
+	</path>
+	<!-- these jars are whats needed for the web application -->
+	<fileset id="app-jars" dir="lib">
+		<include name="activation.jar"/>
+		<include name="apache-solr-1.2-dev.jar"/>
+		<include name="commons-beanutils-1.7.0.jar"/>
+		<include name="commons-codec.jar"/>
+		<include name="commons-collections.jar"/>
+		<include name="commons-dbcp-1.2.2.jar"/>
+		<include name="commons-digester.jar"/>
+		<include name="commons-fileupload-1.1.1.jar"/>
+		<include name="commons-httpclient.jar"/>
+		<include name="commons-io-1.2.jar"/>
+		<include name="commons-lang-2.3.jar"/>
+		<include name="commons-logging.jar"/>
+		<include name="commons-pool-1.3.jar"/>
+		<include name="ehcache-1.2.4.jar"/>
+		<include name="freemarker.jar"/>
+		<include name="ibatis-common-2.jar"/>
+		<include name="ibatis-dao-2.jar"/>
+		<include name="ibatis-sqlmap-2.jar"/>
+		<include name="jcaptcha-all-1.0-RC6.jar"/>
+		<include name="jdom.jar"/>
+		<include name="joda-time-1.3.jar"/>
+		<include name="jstl.jar"/>
+		<include name="log4j.jar"/>
+		<include name="lucene-snowball-2.1.0.jar"/>
+		<include name="lucene-core-2.1.0.jar"/>
+		<include name="lucene-highlighter-2.1.0.jar"/>
+		<include name="mail.jar"/>
+		<include name="mysql-connector-java-5.0.5-bin.jar"/>
+		<include name="rome-0.9.jar"/>
+		<include name="solr-client.jar"/>
+		<include name="spring.jar"/>
+		<include name="spring-mock.jar"/>
+		<include name="standard.jar"/>
+		<include name="struts.jar"/>
+		<include name="urlrewrite-2.6.0.jar"/>
+		<include name="xpp3-1.1.3.4.O.jar"/>
+		<include name="VideoEgg.jar"/>
+	</fileset>
+	<!-- define ant tasks which are not part of the ant core distribution -->
+	<taskdef name="hibernatetool" classname="org.hibernate.tool.ant.HibernateToolTask" classpathref="alib-path"/>
+	<taskdef name="jalopy" classname="de.hunsicker.jalopy.plugin.ant.AntPlugin" classpathref="alib-path"/>
+	<taskdef name="svn" classname="org.tigris.subversion.svnant.SvnTask" classpathref="alib-path"/>
+	<taskdef name="tc-deploy" classname="org.apache.catalina.ant.DeployTask" classpathref="alib-path"/>
+	<taskdef name="tc-list" classname="org.apache.catalina.ant.ListTask" classpathref="alib-path"/>
+	<taskdef name="tc-reload" classname="org.apache.catalina.ant.ReloadTask" classpathref="alib-path"/>
+	<taskdef name="tc-resources" classname="org.apache.catalina.ant.ResourcesTask" classpathref="alib-path"/>
+	<taskdef name="tc-roles" classname="org.apache.catalina.ant.RolesTask" classpathref="alib-path"/>
+	<taskdef name="tc-start" classname="org.apache.catalina.ant.StartTask" classpathref="alib-path"/>
+	<taskdef name="tc-stop" classname="org.apache.catalina.ant.StopTask" classpathref="alib-path"/>
+	<taskdef name="tc-undeploy" classname="org.apache.catalina.ant.UndeployTask" classpathref="alib-path"/>
+	<taskdef name="tc-validate" classname="org.apache.catalina.ant.ValidatorTask" classpathref="alib-path"/>
+	<taskdef name="tc-serverinfo" classname="org.apache.catalina.ant.ServerinfoTask" classpathref="alib-path"/>
+	<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="alib-path"/>
+	<!-- OK. Here come the targets -->
+	<target name="print" depends="" description="print various paramters">
+		<echo>ant version is ${ant.version}</echo>
+		<echo>ant java version is ${ant.java.version}</echo>
+		<echo>java.version is ${java.version}</echo>
+		<echo>java.home is ${java.home}</echo>
+		<exec executable="java" failonerror="yes">
+			<arg value="-version"/>
+		</exec>
+		<sql driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}" print="true">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			select version();
+		</sql>
+	</target>
+	<target name="check_mysql" depends="" description="Check mysql is correct">
+		<sql version="${ws.db.version}" driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}" print="true">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			select version();
+		</sql>
+	</target>
+	<target name="check_ant" depends="" description="Check correct version of ant is used">
+		<fail message="Please install ant ${ws.ant_version}, your version ${ant.version} will not do">
+			<condition>
+				<not>
+					<contains string="${ant.version}" substring="${ws.ant_version}"/>
+				</not>
+			</condition>
+		</fail>
+	</target>
+	<target name="check_java" depends="" description="Check correct version of java is used">
+		<fail message="Please install java ${ws.ant_java_version}. your version ${ant.java.version} will not do ">
+			<condition>
+				<not>
+					<contains string="${ant.java.version}" substring="${ws.ant_java_version}"/>
+				</not>
+			</condition>
+		</fail>
+	</target>
+	<target name="check" depends="check_ant,check_java,check_mysql" description="Check all prerequisites"/>
+	<target name="init" depends="" description="Init build process">
+	</target>
+	<target name="javadoc" depends="init" description="Create all javadocs">
+		<javadoc destdir="${ws.compile.javadoc.dir}" verbose="false" sourcepathref="source-path" classpathref="rlib-path"/>
+	</target>
+	<target name="compile" depends="init" description="Compile main source tree java files into class files, generate jar files">
+		<mkdir dir="${ws.compile.build.dir}"/>
+		<javac destdir="${ws.compile.build.dir}" source="${ws.compile.java_version}" target="${ws.compile.java_version}" debug="true" deprecation="false" optimize="false" failonerror="true">
+			<src refid="source-path"/>
+			<classpath refid="rlib-path"/>
+			<compilerarg value="-Xlint:all"/>
+			<compilerarg value="-Xlint:deprecation"/>
+			<compilerarg value="-Xlint:unchecked"/>
+		</javac>
+	</target>
+	<target name="war" depends="compile,revision" description="Build web war file">
+		<delete dir="${ws.compile.temp.dir}"/>
+		<mkdir dir="${ws.compile.temp.dir}"/>
+		<copy toDir="${ws.compile.temp.dir}">
+			<fileset dir="web/webapp/" includes="**/*.xml"/>
+			<filterchain>
+				<filterreader classname="org.apache.tools.ant.filters.ExpandProperties"/>
+			</filterchain>
+		</copy>
+		<mkdir dir="${ws.compile.dist.dir}"/>
+		<war destfile="${ws.compile.dist.war}" webxml="temp/WEB-INF/web.xml">
+			<lib refid="app-jars">
+			</lib>
+			<classes dir="${ws.compile.build.dir}"/>
+			<classes dir="model/java" includes="**/*.xml"/>
+			<classes dir="model/java" includes="**/*.properties"/>
+			<classes dir="web/java" includes="**/*.xml"/>
+			<classes dir="web/java" includes="**/*.properties"/>
+			<fileset dir="web/webapp" excludes="**/*.xml"/>
+			<fileset dir="temp"/>
+		</war>
+	</target>
+	<target name="build" depends="jar_meta" description="Build the entire system"/>
+	<target name="clean" depends="" description="Clean output dirs (build, dist)">
+		<delete dir="${ws.compile.dist.dir}"/>
+		<delete dir="${ws.compile.javadoc.dir}"/>
+		<delete dir="${ws.compile.build.dir}"/>
+		<delete dir="${ws.compile.temp.dir}"/>
+		<delete dir="${ws.test.output.dir}"/>
+		<delete dir="${ws.schemadocu}"/>
+		<delete dir="onejar"/>
+		<delete dir="autosql"/>
+	</target>
+	<target name="remote-check" depends="" description="Check the remote tomcat">
+		<echo>not implemented yet</echo>
+	</target>
+	<target name="remote-serverinfo" depends="" description="Show tomcat version">
+		<tc-serverinfo url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}"/>
+	</target>
+	<target name="remote-deploy" depends="" description="Install web application">
+		<tc-deploy url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}" path="${ws.compile.dist.path}" war="${ws.compile.dist.war}"/>
+	</target>
+	<target name="remote-deploy-all" depends="remote-deploy" description="Deploy all applications"/>
+	<target name="remote-reload" depends="" description="Reload web application">
+		<tc-reload url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}" path="${ws.compile.dist.path}"/>
+	</target>
+	<target name="remote-reload-all" depends="remote-reload" description="Reload all applications"/>
+	<target name="remote-undeploy" depends="" description="Remove web application">
+		<tc-undeploy url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}" path="${ws.compile.dist.path}"/>
+	</target>
+	<target name="remote-undeploy-all" depends="remote-undeploy" description="Undeploy all applications"/>
+	<target name="remote-list" depends="" description="List applications on the Tomcat">
+		<tc-list url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}"/>
+	</target>
+	<target name="remote-resources" depends="" description="List resources on the Tomcat">
+		<tc-resources url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}"/>
+	</target>
+	<target name="remote-start" depends="" description="Start the application server">
+		<tc-start url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}"/>
+	</target>
+	<target name="remote-stop" depends="" description="Stop the application server">
+		<tc-stop url="${ws.runtime.url}" username="${ws.runtime.username}" password="${ws.runtime.password}"/>
+	</target>
+	<target name="db-init" depends="" description="Create the database itself. No scheme or data">
+		<sql driver="${ws.db.driver}" url="${ws.db.curl}" userid="${ws.db.admin_user}" password="${ws.db.admin_pass}">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			DROP DATABASE IF EXISTS ${ws.db.name};
+			REVOKE ALL PRIVILEGES, GRANT OPTION FROM ${ws.db.user};
+			DROP USER ${ws.db.user};
+			CREATE USER ${ws.db.user} IDENTIFIED by '${ws.db.pass}';
+			CREATE DATABASE ${ws.db.name};
+			GRANT ALL PRIVILEGES ON ${ws.db.name}.* TO '${ws.db.user}'@'%';
+		</sql>
+	</target>
+	<target name="db-drop-schema" depends="" description="Drop all defined tables and procedures">
+		<sql driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			<transaction src="sql/drop.sql"/>
+		</sql>
+	</target>
+	<target name="db-show-status" depends="" description="Show all tables, procedures and functions in the db">
+		<sql driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}" print="true">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			SHOW TABLES;
+			SHOW PROCEDURE STATUS;
+			SHOW FUNCTION STATUS;
+		</sql>
+	</target>
+	<target name="db-create-empty" depends="db-drop-schema" description="Create db with schema only">
+		<sql driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<classpath>
+				<pathelement location="${ws.db.driver_jar}"/>
+			</classpath>
+			<transaction src="sql/schema.sql"/>
+		</sql>
+	</target>
+	<target name="db-dump-mysql" depends="" description="Create a dump of the database">
+		<exec executable="mysqldump" output="dump.sql" failonerror="yes">
+			<arg value="--user=${ws.db.user}"/>
+			<arg value="--password=${ws.db.pass}"/>
+			<arg value="${ws.db.name}"/>
+		</exec>
+	</target>
+	<target name="db-dbunit-clean" depends="" description="Clean the entire database via db-unit">
+		<dbunit driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<operation type="DELETE_ALL"/>
+		</dbunit>
+	</target>
+	<target name="db-dbunit-import" depends="db-create-empty" description="Import the entire database via db-unit">
+		<dbunit driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<operation type="INSERT" src="datasets/color.xml" transaction="true"/>
+			<operation type="INSERT" src="datasets/wordGroup.xml" transaction="true"/>
+			<operation type="INSERT" src="datasets/word.xml" transaction="true"/>
+			<operation type="INSERT" src="datasets/text.xml" transaction="true"/>
+		</dbunit>
+	</target>
+	<target name="db-dbunit-import-special" depends="db-create-empty" description="Import the entire database via db-unit">
+		<dbunit driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<operation type="INSERT" src="datasets/data.xml" transaction="true"/>
+		</dbunit>
+	</target>
+	<target name="db-dbunit-export" depends="" description="Create an xml dump of the database in xml format">
+		<dbunit driver="${ws.db.driver}" url="${ws.db.durl}" userid="${ws.db.user}" password="${ws.db.pass}">
+			<export dest="datasets/data.xml"/>
+			<export dest="datasets/data.dtd" format="dtd"/>
+		</dbunit>
+	</target>
+	<target name="revision" depends="" description="Create the html revision stamp file">
+		<svn>
+			<status revisionProperty="revision" textStatusProperty="revision_text" path="${basedir}"/>
+		</svn>
+	</target>
+	<target name="test" depends="build" description="Run all tests">
+		<mkdir dir="${ws.test.output.dir}"/>
+		<junit printsummary="yes" haltonfailure="no">
+			<classpath refid="rlib-path"/>
+			<classpath>
+				<pathelement path="classes"/>
+				<pathelement path="web/test"/>
+				<pathelement path="model/test"/>
+				<pathelement path="."/>
+			</classpath>
+			<formatter type="brief" usefile="false"/>
+			<formatter type="xml"/>
+			<formatter type="plain"/>
+			<batchtest fork="yes" todir="${ws.test.output.dir}">
+				<fileset dir="web/test">
+					<include name="**/*Test*.java"/>
+					<exclude name="**/Abstract*"/>
+				</fileset>
+				<fileset dir="model/test">
+					<include name="**/*Test*.java"/>
+					<exclude name="**/AllTests.java"/>
+					<exclude name="**/Abstract*"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>
+	<target name="cruisecontrol" depends="clean,build,ch-deploy" description="Target meant to be run by cruise control"/>
+	<target name="local-check" depends="" description="Check that local tomcat is available">
+		<available file="${ws.runtime.webapps_home}" type="dir" property="webapps_home_available"/>
+		<fail message="webapps_home not available: ${ws.runtime.webapps_home}" unless="webapps_home_available"/>
+	</target>
+	<target name="local-stop">
+		<echo>Attempting to stop a Tomcat process from ${ws.runtime.catalina_home}</echo>
+		<java jar="${ws.runtime.bootstrap}" fork="true">
+			<jvmarg value="-Dcatalina.home=${ws.runtime.catalina_home}"/>
+			<arg line="stop"/>
+		</java>
+	</target>
+	<target name="local-start" depends="local-check" description="Start local tomcat">
+		<echo>Attempting to spawn a Tomcat process from ${ws.runtime.catalina_home}</echo>
+		<java jar="${ws.runtime.bootstrap}" fork="true" spawn="true">
+			<jvmarg value="-Dcatalina.home=${ws.runtime.catalina_home}"/>
+		</java>
+	</target>
+	<target name="local-clean" depends="local-stop" description="Clean current deployment from local tomcat">
+		<delete dir="${ws.runtime.webapps_home}/webapps/${ws.compile.dist.path}"/>
+		<delete file="${ws.runtime.webapps_home}/webapps/${ws.compile.dist.war-name}"/>
+	</target>
+	<target name="local-deploy" depends="local-check" description="Deploy to local tomcat">
+		<copy todir="${ws.runtime.webapps_home}/webapps" verbose="true">
+			<fileset dir="${ws.compile.dist.dir}" includes="**/*.war"/>
+		</copy>
+	</target>
+	<target name="ch-check" depends="" description="Check that CATALINA_HOME is set and is a directory">
+		<property environment="env"/>
+		<property name="catalina_home" value="${env.CATALINA_HOME}"/>
+		<fail message="$CATALINA_HOME not set" unless="catalina_home"/>
+		<available file="${catalina_home}" type="dir" property="catalina_home_available"/>
+		<fail message="$CATALINA_HOME not available: ${catalina_home}" unless="catalina_home_available"/>
+		<available file="${catalina_home}/webapps" type="dir" property="catalina_home_available"/>
+		<fail message="$CATALINA_HOME/webapps not available: ${catalina_home}/webapps" unless="catalina_home_available"/>
+	</target>
+	<target name="ch-deploy" depends="ch-check,build" description="Deploy via CATALINA_HOME">
+		<delete dir="${catalina_home}/webapps/${ws.compile.dist.war-deploy}"/>
+		<copy todir="${catalina_home}/webapps" verbose="true">
+			<fileset dir="${ws.compile.dist.dir}" includes="**/*.war"/>
+		</copy>
+	</target>
+	<target name="ch-clean" depends="ch-check" description="Clean via CATALINAE_HOME">
+		<delete dir="${catalina_home}/webapps/${ws.compile.dist.war-deploy}"/>
+		<delete file="${catalina_home}/webapps/${ws.compile.dist.war-name}"/>
+	</target>
+	<target name="ch-undeploy" depends="ch-clean" description="Undeploy via CATALINAE_HOME"/>
+	<target name="ch-deploy-jsp" depends="ch-check" description="Deploy only JSPs via CATALINA_HOME">
+		<copy todir="${catalina_home}/webapps/${ws.compile.dist.path}">
+			<fileset dir="web/webapp" includes="**/*.jsp"/>
+			<fileset dir="web/webapp" includes="**/*.tag"/>
+			<fileset dir="web/webapp" includes="images/**/*"/>
+			<fileset dir="web/webapp" includes="css/**/*"/>
+			<fileset dir="web/webapp" includes="js/**/*"/>
+		</copy>
+	</target>
+	<target name="all" depends="clean,build,remote-undeploy-all,remote-deploy-all" description="Do everything from scratch"/>
+	<target name="jar_local" depends="compile" description="jar everything up">
+		<mkdir dir="${ws.dir_dist}"/>
+		<jar destfile="${ws.jar_local}" basedir="classes">
+			<manifest>
+				<attribute name="Built-By" value="${ws.username}"/>
+				<attribute name="Main-Class" value="${ws.mainclass}"/>
+			</manifest>
+		</jar>
+	</target>
+	<target name="jar_meta" depends="jar_local" description="Build one ONE-JAR">
+		<mkdir dir="${ws.dir_dist}"/>
+		<mkdir dir="${ws.onejardir}/main"/>
+		<copy todir="${ws.onejardir}/main"
+			file="${ws.jar_local}"/>
+		<mkdir dir="${ws.onejardir}/lib"/>
+		<copy todir="${ws.onejardir}/lib">
+			<fileset dir="rlib"/>
+		</copy>
+		<copy todir="${ws.onejardir}">
+			<fileset dir="one_jar_prep"/>
+		</copy>
+		<jar jarfile="${ws.jar_meta}" basedir="${ws.onejardir}" manifest="one_jar_prep/META-INF/MANIFEST.MF"/>
+	</target>
+	<target name="run_onejar_sa" depends="" description="run the application">
+		<exec executable="java" failonerror="yes">
+			<arg value="-jar"/>
+			<arg value="${ws.jar_meta}"/>
+		</exec>
+	</target>
+	<target name="run_onejar_embeded" depends="" description="run the application">
+		<java fork="true" jar="${ws.jar_meta}"/>
+	</target>
+	<target name="run_ant" depends="" description="run the application">
+		<java classpath="classes" classname="${ws.mainclass}">
+			<classpath refid="rlib-path"/>
+		</java>
+	</target>
+	<target name="jalopy" depends="" description="Runs jalopy on all source code.">
+		<jalopy>
+			<fileset dir="src">
+				<include name="**/*.java"/>
+			</fileset>
+		</jalopy>
+	</target>
+	<target name="default" depends="compile" description="default build target"/>
+
+	<!-- this is where the hibernate stuff begins -->
+	<target name="schema-drop" depends="" description="drop the hibernate schema">
+		<hibernatetool destdir="">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2ddl
+				export="true"
+				drop="true"
+				create="false"
+				update="false"
+				/>
+		</hibernatetool>
+	</target>
+	<target name="schema-create" depends="" description="create the hibernate schema">
+		<hibernatetool destdir="">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2ddl
+				export="true"
+				drop="false"
+				create="true"
+				update="false"
+				/>
+		</hibernatetool>
+	</target>
+	<target name="schema-dropcreate" depends="" description="drop and create the hibernate schema">
+		<hibernatetool destdir="">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2ddl
+				export="true"
+				drop="true"
+				create="true"
+				update="false"
+				/>
+		</hibernatetool>
+	</target>
+	<target name="schema-update" depends="" description="update the hibernate schema">
+		<hibernatetool destdir="">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2ddl
+				export="true"
+				drop="false"
+				create="false"
+				update="true"
+				/>
+		</hibernatetool>
+	</target>
+	<target name="schema-docu" depends="" description="Generate a html description of the mappings">
+		<hibernatetool destdir="hibernate-html">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2doc/>
+		</hibernatetool>
+	</target>
+	<target name="schema-docu-clean" depends="" description="Remove all schema documentation">
+		<delete dir="${ws.schemadocu}"/>
+	</target>
+	<target name="schema-ddl" depends="" description="export DDL">
+		<mkdir dir="autosql"/>
+		<hibernatetool destdir="autosql">
+			<classpath>
+				<path location="."/>
+				<path location="classes"/>
+			</classpath>
+			<annotationconfiguration configurationfile="hibernate.cfg.xml"/>
+			<hbm2ddl
+				outputfilename="hibernate-create.sql"
+				export="false"
+				drop="false"
+				create="true"
+				update="false"
+				/>
+			<hbm2ddl
+				outputfilename="hibernate-drop.sql"
+				export="false"
+				drop="true"
+				create="false"
+				update="false"
+				/>
+			<hbm2ddl
+				outputfilename="hibernate-all.sql"
+				export="false"
+				drop="true"
+				create="true"
+				update="false"
+				/>
+			<hbm2ddl
+				outputfilename="hibernate-update.sql"
+				export="false"
+				create="false"
+				drop="false"
+				update="true"
+				/>
+		</hibernatetool>
+	</target>
+	<target name="schema-ddl-clean" depends="" description="clean DDL">
+		<delete dir="autosql"/>
+	</target>
+</project>

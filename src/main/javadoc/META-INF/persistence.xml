@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="1.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd">
+  <persistence-unit name="metaPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>org.meta.db.Text</class>
+    <class>org.meta.db.LocGalaxy</class>
+    <class>org.meta.db.DbDatabase</class>
+    <class>org.meta.db.DbField</class>
+    <class>org.meta.db.LocContinent</class>
+    <class>org.meta.db.DbTable</class>
+    <class>org.meta.db.DbProcedure</class>
+    <class>org.meta.db.LocPlanet</class>
+    <class>org.meta.db.Word</class>
+    <class>org.meta.db.WordGroup</class>
+    <class>org.meta.db.DbFunction</class>
+    <class>org.meta.db.DbUser</class>
+    <class>org.meta.db.Image</class>
+    <class>org.meta.db.PersonId</class>
+    <class>org.meta.db.PersonIdType</class>
+    <class>org.meta.db.DbTrigger</class>
+    <class>org.meta.db.Color</class>
+    <properties>
+      <property name="eclipselink.jdbc.password" value=""/>
+      <property name="eclipselink.jdbc.user" value="mark"/>
+      <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost/myworld"/>
+    </properties>
+  </persistence-unit>
+</persistence>

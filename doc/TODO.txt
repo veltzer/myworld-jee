@@ -1,0 +1,12 @@
+1. make shell hold jdmt and not the other way around.
+2. find a shell framework that I can use to implement the shell with auto completion and all.
+3. make files report them selves to the jnotifier at construction so that notifications from
+	the file system are automatic.
+4. find a plugin framework so that every component of jdmt is a plugin.
+5. add jgraph visualization to jdmt.
+6. use maven to get all third parties and handle development.
+7. configure jalopy well and start using it.
+8. have support for screen like behaviour. After having a shell which allows you to run
+	commands inside the shell - have a screen like capability for multiple screens
+	in one.
+9. build the whole thing atop my own ncurses interface for java.

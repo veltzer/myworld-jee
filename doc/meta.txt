@@ -1,0 +1,43 @@
+1. Build vi for java - and use it with completion.
+	Main modes: java mode (with reflection for completion).
+		xml mode.
+		data layout completions will also be available in it.
+		sql mode (using some kind of flex).
+	The editor could edit either files on the hard disk, or blobs inside
+	a database.
+	Need to get a curses interface for java.
+2. build a full shell in java - with access to system utilities, redirection and everything.
+	Different type of commands (all with completion):
+		1. System commands (using bash completion).
+		2. Built in system commands (jmv,jcp) (using framework completion).
+		3. Database commands (using framework completion and db data). 
+		4. Jdmt commands (using framework completion and graph data).
+		5. Ant tasks ?!?
+3. The whole system should be plugin based. Types of plugins:
+	1. New built in shell commands.
+	2. New database commands.
+	3. New editors.
+	4. New Jdmt commands.
+4. Entertain the following notion: suppose, in today systems, you open vi on a file. Vi then records the last things you did on that file but if you rename the file all of that information is lost. If the editor was integrated with your moving of files, or if that information was associated with the systems notion of a file then the information would stay intact and correct.
+5. Meta should have a screen type interface.
+
+Rationale
+1. Development languages should have completion built in.
+2. Java has good reflection features.
+3. => java is good at building completion editors.
+4. There is no decent vi for java.
+5. Editors should be tightly integrated with the environment (and users code).
+6. databases should be tightly intergrated with the environment (and users code).
+7. Dependency management should be a part of this system. Dependants and target can be:
+	files
+	database records
+	Any other plugin (web resource etc...).
+
+Technologies worth taking a look at:
+- JCI - java compiler interface - can compile and load on the fly into the same virtual machine.
+- The JCI framework also has a sub project which does FAM like alternation monitoring.
+
+Current mile stone:
+be able to do vi "source file name" which will run an external vi.
+then, after the save, be able to detect the change to the file, recompile it, and reload it.
+The file will be the hello function (prints hello when you type hello).

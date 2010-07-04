@@ -1,0 +1,6 @@
+- Made the class scanner recursive (no more worrying about new rich functions).
+- Managed to get the glassfish server running inside my application.
+- the backspace button now works.
+- basic history is now working.
+- jncurses wrapper using jna now works.
+- jncurses wrapper actually starting to work now (receiving commands).

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+	<appender name="FILE" class="org.apache.log4j.FileAppender">
+		<param name="file" value="log4j.log"/>
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%p %t %c{1} %d{yyyyMMdd-HHmmss.SSS} - %m%n"/>
+		</layout>
+	</appender>
+	<logger name="org.hibernate.cfg.Environment">
+		<level value="info"/>
+		<appender-ref ref="FILE"/>
+	</logger>
+	<root>
+		<level value="info"/>
+		<appender-ref ref="FILE"/>
+	</root>
+</log4j:configuration>

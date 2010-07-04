@@ -1,0 +1,19 @@
+- got ridd of the schemas for create and drop.
+- added tags data.
+- added blob table to the database.
+- added media types to the database.
+- added config table to the database.
+- images table does not have images. add them.
+- backup of database now saves overview of number of records per table also.
+- load my own data as person id into the database.
+- added a table of audio books and loaded data into the database.
+- work type is now in a separate table.
+- added statistics to the end of the page.
+- did dojo example.
+- separated author names to firstname, surname, othername.
+- separated peoples names to firstname, surname, othername.
+- organized my database maintainance scripts better.
+- refactored the works table to not have author data in it.
+- added groups of people to the database.
+- allowing multiple creators of a work.
+- allowing multiple viewers of a work.

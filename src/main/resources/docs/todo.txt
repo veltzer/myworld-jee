@@ -1,0 +1,12 @@
+- make the entire application work without swing.
+- show the cursor (it is hard to know where you are right now).
+- make the external execution work.
+- add a history feature (keyup and keydown).
+	Currently store as much history as possible, we will limit it later.
+	Currently have no persistant storage for history.
+- make the "help" command show all available commands.
+- make the auto completion work again.
+- make the progress reporting work (add ui for that that shows a progress bar).
+- put my music collection into a database.
+- make my web application show my music collection in a tree
+with lazy loading (dojo ?!?).

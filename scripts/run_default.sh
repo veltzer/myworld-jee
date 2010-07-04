@@ -1,0 +1,3 @@
+#!/bin/bash
+# no, this is not a mistake - everything is now available through the console...
+java -jar dist/meta.jar $*

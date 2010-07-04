@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<ws>
+	<!-- note that all properties set here can be overridden on the command line or in local.properties -->
+	<ant_version>1.7.0</ant_version>
+	<ant_java_version>1.6</ant_java_version>
+	<tomcat_version>5.5.23</tomcat_version>
+	<mysql_version>5.0</mysql_version>
+	<!--
+	<mainclass>net.veltzer.examples.JnotifyListenerImpl</mainclass>
+	<mainclass>net.veltzer.readline.Readline</mainclass>
+	-->
+	<mainclass>net.veltzer.jdmt.Jdmt</mainclass>
+	<dir_dist>dist</dir_dist>
+	<jar_local>dist/local.jar</jar_local>
+	<jar_meta>dist/meta.jar</jar_meta>
+	<username>Mark Veltzer</username>
+	<onejardir>onejar</onejardir>
+	<schemadocu>hibernate-html</schemadocu>
+	<test>
+		<output>
+			<dir location="test-results"/>
+		</output>
+	</test>
+	<compile>
+		<java_version>1.5</java_version>
+		<javadoc>
+			<dir location="javadoc"/>
+		</javadoc>
+		<dist>
+			<dir location="dist"/>
+			<war-deploy>wellnet</war-deploy>
+			<war-name>${ws.compile.dist.war-deploy}.war</war-name>
+			<war>${ws.compile.dist.dir}/${ws.compile.dist.war-name}</war>
+			<path>/${ws.compile.dist.war-deploy}</path>
+
+			<war-deploy-contententry>wellnet-contententry</war-deploy-contententry>
+			<war-contententry-name>${ws.compile.dist.war-deploy-contententry}.war</war-contententry-name>
+
+			<war-contententry>${ws.compile.dist.dir}/${ws.compile.dist.war-contententry-name}</war-contententry>
+			<path-contententry>/${ws.compile.dist.war-deploy-contententry}</path-contententry>
+		</dist>
+		<build>
+			<dir location="classes"/>
+		</build>
+		<temp>
+			<dir location="temp"/>
+		</temp>
+	</compile>
+	<db>
+		<version>5.0.38-Debian_3-log</version>
+		<driver>com.mysql.jdbc.Driver</driver>
+		<driver_jar>alib/mysql-connector-java-5.0.5-bin.jar</driver_jar>
+		<name>myworld</name>
+		<url>jdbc:mysql://localhost:3306/${ws.db.name}</url>
+		<curl>jdbc:mysql://localhost:3306/mysql</curl>
+		<durl>${ws.db.url}</durl>
+		<dcurl>${ws.db.curl}</dcurl>
+		<user>myworld</user>
+		<pass></pass>
+		<admin_user>mark</admin_user>
+		<admin_pass></admin_pass>
+	</db>
+	<runtime>
+		<url>http://localhost:8080/manager</url>
+		<username>wellnet</username>
+		<password>b3w3lln3t</password>
+		<webapps_home>/var/lib/tomcat5.5/</webapps_home>
+		<catalina_home>/usr/share/tomcat5.5/</catalina_home>
+		<bootstrap>${ws.runtime.catalina_home}/bin/bootstrap.jar</bootstrap>
+		<google_key></google_key>
+		<showJspStackTraces>true</showJspStackTraces>
+		<!--loglevel>DEBUG</loglevel-->
+		<loglevel>info</loglevel>
+		<logfile>${catalina.base}/logs/wellsphere.log</logfile>
+	</runtime>
+</ws>
