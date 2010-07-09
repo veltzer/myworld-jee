@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE words PUBLIC "-//META//DTD XML WORDS V1.0//EN" "http://www.veltzer.net/xml/dtd/words.dtd">
+<!-- add options for categories here where I could divide lists of words
+	into smaller lists to make them more manageble -->
+<words name="secret" description="words that I do not wish to appear in packages going out">
+	<word text="kingcrim"/>
+	<word text="mil'lon"/>
+	<word text="mil|lon"/>
+	<word text="mel|lon"/>
+	<word text="velpver"/>
+	<word text="shit"/>
+	<word text="sex"/>
+	<word text="fuck"/>
+	<word text="suck"/>
+	<word text="interracial"/>
+	<word text="mmf"/>
+	<word text="les"/>
+	<word text="ffm"/>
+	<word text="fff"/>
+	<word text="porn"/>
+	<word text="escorts"/>
+	<word text="call girls"/>
+	<word text="callgirls"/>
+	<word text="call_girls"/>
+</words>

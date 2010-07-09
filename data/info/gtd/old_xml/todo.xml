@@ -1,0 +1,3100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE todo PUBLIC "-//META//DTD XML TODO V1.0//EN" "http://www.veltzer.net/xml/dtd/todo.dtd">
+<!-- todo
+-->
+<todo>
+	<subjects>
+		<subject id="subject.misc" name="misc"/>
+		<subject id="subject.papers" name="papers"/>
+		<subject id="subject.baseline" name="baseline"/>
+		<subject id="subject.website" name="website"/>
+		<subject id="subject.pdmt" name="pdmt"/>
+		<subject id="subject.link" name="link"/>
+		<subject id="subject.test" name="test"/>
+		<subject id="subject.java" name="java"/>
+		<subject id="subject.perl" name="perl"/>
+		<subject id="subject.tools" name="tools"/>
+		<subject id="subject.lit" name="lit"/>
+		<subject id="subject.text" name="text"/>
+		<subject id="subject.mtl" name="mtl"/>
+		<subject id="subject.gtl" name="gtl"/>
+		<subject id="subject.autoconf" name="autoconf"/>
+		<subject id="subject.inti" name="init"/>
+		<subject id="subject.sql" name="sql"/>
+		<subject id="subject.stamp" name="stamp"/>
+		<subject id="subject.lilypond" name="lilypond"/>
+		<subject id="subject.aegis" name="aegis"/>
+		<subject id="subject.internet" name="internet"/>
+		<subject id="subject.wildcard" name="wildcard"/>
+		<subject id="subject.opts" name="opts"/>
+		<subject id="subject.spelling" name="spelling"/>
+		<subject id="subject.debug" name="debug"/>
+		<subject id="subject.coloring" name="coloring"/>
+		<subject id="subject.cvs" name="cvs"/>
+		<subject id="subject.rule" name="rule"/>
+		<subject id="subject.docbook" name="docbook"/>
+		<subject id="subject.dbdef" name="dbdef"/>
+		<subject id="subject.media" name="media"/>
+		<subject id="subject.simul" name="simul"/>
+		<subject id="subject.cpp" name="cpp"/>
+		<subject id="subject.movies" name="movies"/>
+		<subject id="subject.tt2" name="tt2"/>
+		<subject id="subject.dsl" name="dsl"/>
+		<subject id="subject.dtd" name="dtd"/>
+		<subject id="subject.html" name="html"/>
+		<subject id="subject.license" name="license"/>
+		<subject id="subject.chess" name="chess"/>
+		<subject id="subject.problems" name="problems"/>
+		<subject id="subject.machine" name="machine"/>
+		<subject id="subject.cook" name="cook"/>
+		<subject id="subject.schemas" name="schemas"/>
+		<subject id="subject.open_source" name="open_source"/>
+		<subject id="subject.database" name="database"/>
+		<subject id="subject.xmlui" name="xmlui"/>
+		<subject id="subject.ideas" name="ideas"/>
+		<subject id="subject.backups" name="backups"/>
+		<subject id="subject.graph" name="graph"/>
+		<subject id="subject.vim" name="vim"/>
+		<subject id="subject.history" name="history"/>
+		<subject id="subject.general" name="general"/>
+		<subject id="subject.env" name="env"/>
+		<subject id="subject.pod2docbook" name="pod2docbook"/>
+	</subjects>
+	<items>
+		<item
+			subject_ref="subject.misc"
+			text="do views on the todo (which trees are expanded and which are not)	(multiple views on each)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="make sample date and check that it is imported right(dates there should be date time...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="sanity checks could include cyclic inclusion etc"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="we will need a Perl/CGI script with that of course in order"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="to publish the todo on the web server"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="mark minues in the todo file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="build parser to move the todo file to xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="make the documentation file match"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="why dont I see all the classes in the index of the java documentation ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="make my java dependency tool work with the cook module for writingcook deps"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="get a better Java dependency tool"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="get ridd of a small bug in Javadoc generation which createstwo files with no 'HTML' extension in the HTML dir and so theHTML.pm module has to authorize them inbug which ron found in Simul - add event data to treemap	(currently the tree map stores the component and the time and	since some extra data which you wish to store with the event	is not related nor to the time or to the componenet there must	be a third element (some object like EventData or something)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="make a platform definition for java which will determine thedirectory in which the object files reside.(this will be determinedby the compiler)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="support java architectures (multiple compilers)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.java"
+			text="do the time fix for shay"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a class that can (with hints) validate a file name and a directory leading to it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make each language module take care of its own files with his own hints to the checking class"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make the build process activate this"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="only write colors to terminals that can show colors"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="test that no module is used more than once"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="test that no module uses its own routine without &amp; before them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="test that no module uses its own routine with full name (why should	he write a full name ? its less portable and less OO)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add widget that creates a combo for the enumerated type	and a test for it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="Move documentation in all modules and scripts to the end of themodules(for faster compilation) and use the __END__ tagDo a script to do that"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make real perl compilations"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="remove all bogus scripts in Meta/Baseline	(scripts which do nothing...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="do the perl compilations and get even more confidence"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="run all scripts and have a clean output"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="fix the build process and create a pl manifest"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="run the perl manifest and make sure it is clean"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="change #__DATA__ to __DATA__ back"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="get ridd of system_shell_nodie usages that are just there for the	standard output (instead redirect the standard output...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make Connection be able to write itself to XML and the same for Def"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="move all the code in batch_test to the test module"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a checkout_list function in Aegis.pm ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="move the perl matching for tests to the aegis::is_test function	(aegis should know if a script is a test or not...)	(from the Perl.pm module)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="start adding postgress support - run a postgress server on my machine"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="whereever I use while($line=&lt;FILE&gt;...) substitute it withMeta::Utils::Parse::Text"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make a list of functions that you're not supposed to use directly(like die from the CODE module)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="This is in preparation for the time where"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="you could detect such usage (using the perl parsing methods) and flag anerror on this (except for in accepted locations which will be explicitlylisted)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="use XQL after doing a demo for it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="use a general framework of objects to XML ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make an internal and external perl manifest"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a test to check that all lines in source files are 80 chars maxin width"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="replace the author in all packages and create a script to easily do	this"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make fast scripts to do that (mind that the scripts need to be preciseand only do that when it concerns the start of the line...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check for circular dependencies in perl dep files too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="bring objects for gzip,bzip,tar,rpm"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make the def object print itself in XML form (the same it is readin)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="base options on XML (cut down on the code)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add sanity checking to the Db::Def parsing process	(things that cannot be controlled via the DTD)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="move all Db::Def related classes to some subdir: Meta::Db::Def"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="remove the read routine code for options"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make an XML parser for options"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check where options are read"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="fix all appropriate data files to be XML"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="keep the old read routine (maybe ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make options be able to write itself"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="bring back the check_arg checks"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check how ISA works and have a routines like-	is_child	is_of_class	is_father	is_hash	is_hash_ref	is_list	is_list_ref	is_string	is_string_ref	etc... in a module which helps oo programmers"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="pass over all modules and make sure they use the routines onevery occasion"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="put the cook options in XML format(make options read XML too...). (it will be much simpler that way)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make the mopt object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make the mopt object generate an interface for himself (UI)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="get ridd of the old style options code at all"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="in all modules-"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add FUCNTION DOCUMENTATION and MAIN CODE tags to .pl pods"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="clean up the '$curr ne' parts in perl.pm and only leave really	relevant stuff"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="how do I automatically create the inheritance graph	(which is different from the usage graph) when	doing perl development ? (for documentation for instance...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check how to not collide namespeaces in inheritance in the perl	guildes and implement it in all objects"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check race conditions when using get_temp_file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="start documenting perl executable options"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="use object checking routines in all my modules"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="do a closure option that depends on all dependencies which lists alloutside modules which I use"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="Make a list in the baseline of all modules you allow to be used in perland which package supplies them. check that the outside modules usedwhen creating deps are on the list. otherwise go out with an errorare there other places where I could use the Path module ?	(linkers ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="problem with the class blessing mechanism - all new routines alreadyreceive a class name - why not use it for the bless"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add more options to creationg of stubs-	methods, stubs for tests, stubs with BEGIN/END blocks, stubs	with global variables"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="perl pod checs-	DETAILS-		MANIFEST is ok		CHANGE is the real number of the change		AUTHOR is ok	name in SYNOPOSIS is ok. (for pls)	SYNOPSIS is surrounded with C&lt;&gt;	description in NAME matches opts (for pls)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="change my name in the AUTHOR clause"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="do the program to change (mind you - change...) pods"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="do the closure thing for grpahs in perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a few more pod titles from the pod2man manpage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="should we move to the usage of name arguments ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="I think my C&lt;&gt; check is bad (SUBSTR)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="remove ', '"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="check prototype matching"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="'mark' is always in 'set_author()'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="name in NAME is same as in 'set_description('');"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="name in DETAILS of writer is 'mark'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="name of PROJECT in DETAILS is 'meta'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="'__DATA__' is always '#__DATA__'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="I sould not write resolved names of modules into dep files	(this causes a lot of problems)	This means neither mine nor absolute	But if I write non absolute external modules cook wont be	able to resolve them and will claim they dont exist"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a default environment checking code which checks for a certainenvironment variable and if it is there it make options verbose(this is to opts.pm)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make the perl files have history (re enable it after fix)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add checking that there is no '::new(' in perl checks	(new should be called as -&gt;new()"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="scout the baseline and look for garbage - if there is any fix	the problems"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="try to work with new style sheets"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make it so even if I add an illegal file pattern it will not be	added"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make sgml checks of xmls too and vide versa"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="make links in the def docbook output"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="what about perl code profiling ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="add a virtual method to the switch will is called integrationwhich will do nothing in all modules execpt perl and python-	in perl-chmod+x and revision update	in python-chmod+x"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="perl can use the HISTORY tag to place the revision information in"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="move all perl modules to plit system"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="do a package management system&lt;package&gt;	&lt;lang&gt;perl&lt;/lang&gt;	&lt;type&gt;.tar.bz2&lt;/type&gt;	&lt;name&gt;		meta-aegis	&lt;/name&gt;	&lt;supply&gt;		&lt;file&gt;perl/lib/Meta/Baseline/Aegis.pm&lt;/file&gt;	&lt;/supply&gt;	&lt;tests&gt;		&lt;test&gt;		&lt;/test&gt;	&lt;/tests&gt;&lt;package&gt;which will produce a perl packages with everything that needs to be inthem. (Makefile.PL etc...). It will automatically calculate the depsfor the Aegis.pm module and will include them in the packageThe version of the package will be the delta name of the change"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="move perl.pm code to use the dependency object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="remove all Iro stuff from the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="make an errors module which prints errors nicely"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="add coloring of '` stuff (should they be tags ?)	yes - it should - it should be a quote tag"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="make checking facilities and make them optional	two spaces in a row,'\;\ '"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="bring the accurate matching code from Gcc.pm back into order"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="fix the problem with gcc and then bring back the optimization flags	(opt now is not!!! optimized)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="add descriptions to architectures"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="make dependencies architecture specific"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="bring gnome-db into action in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="remove c garabage from perl scripts (cook_cook)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="strict naming conventions in link and rule"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="try to simplify the link mechanisms even more"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="version numbers on libraries which are created from c++ files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="fix the gcc linker to do correct matching"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="make the Gcc.pm module read options from some conf file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="add my own module (Lang/Cpp.pm) which does c++ dependencies	(without calling cincl). and which does it using the	deps object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cpp"
+			text="add (altough weird) option to do dependencies with the object methodusing cincl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="add pictures for movie covers"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="add pictures for people"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="get directors and movies numbers for the movie.xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="book on configuration management"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="get the movie page on my site"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.movies"
+			text="get the DTDs stuff on my site	(after getting it translated to html)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lit"
+			text="jazz theory"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lit"
+			text="perl camel"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lit"
+			text="xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lit"
+			text="sgml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="fix bug one for big data which looks not mine"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="fix bug one for not full implementation (movies-&gt;movies-&gt;movies...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="make it so even when entries in the xml have nothing in them,	they will show in the UI editor"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="enable editing in the tree"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="enable saving the result"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="it is a little slow - how can I speed it up ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="here is one idea - dont create new elements which just have thesame name - they should be the same"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.xmlui"
+			text="add option not to delete stuff on collapse and so to notrecreate them on expand"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="integration is supposed to check that develop.pl in my home is sameas in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="get real home directories in develop.pl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="do an example of dtd parsing (test)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="write a class to convert DTD to sgml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="write a class over that that uses XML::Writer to get a docbook versionof those stuff"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="make a viewer for DTDs. GTK viewer that is"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="get better documentation on writing DTD's"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="make dependencies for DTDs too	(we need that since one DTD can refere to another)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dtd"
+			text="make my database definition dtd refer to the docbook dtd"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="write the code for jade directly"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="use the code from jade directly in ps convertions"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="write openjade code directly"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="use them in docbook and not sgmltools"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="whats with the aspell check to docbooks?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="if you find empty tags (&lt;title&gt;&lt;/title&gt;) issue errors"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="add Lang/Sgml.pm to set sgml environment variables nicely"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="check revision in docbook files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="why dont the pictures come out in the middle even though I useAlign=Center ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="convert docbook to info docbook2x (download, install and use...). (also check that output looks good)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="use &lt;preface&gt; in my books"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make a routine that derives the papers title from a paper"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make a routine that derives all paper titles and make an htmlsnipplet which shows all of those"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="ftp synching tool from the net"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="install new style sheets and use them	(maybe we can drop the error code filtering from	sgmltools ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="sgml needs to have a dependency tools(with a source directory and include directory - the different	beging sources should be compiled and includes should not)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="change suffix of docbook to sgml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="add a file describing openjade installation (nothing was special)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="add a file describing sgml2x installation (only make install)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="use open jade directly"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="remove the def language (place all defs in xml)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="remove the docbook language (place all of its participants in xml)	(should I use it as sgml or xml ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="do dependencies specific to docbook (references to external files	like pitures etc...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make picture for pdmt"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="want to see pictures in my htmls (at the website too)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make Jade.pm work so I could work directly with Jade"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make OpenJade.pm work so I could work directly with OpenJade"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="paper about why people are afraid of the command line"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="do dependencies for docbooks. do some syntax checks for docbooks(tab newline etc...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="the check does not catch errors which the postscript conversioncatches - why is that ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="there is a package called docbook2X which I dont have. Try to	get it and check it out"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="remove log which is created all the time in jade.pm"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="fix pdf support (pdf is created but does not work!?!)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make my site have pdf versions too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="finish info creation using Sgml2"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="ask geocities to allow info files too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.docbook"
+			text="make my site have info versions too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="put new stylesheets in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="use new stylesheets"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="upload a new website (because of the new stylesheets)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="make not onehtml stuff too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="add the dsl language to the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="get some dsl documentation for your documentation archive"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dsl"
+			text="write a dsl convertor from def to docbook"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.env"
+			text="a tool which shows all the development files which launches as editorfor you"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.env"
+			text="make a script for showing you all the todo items from all perl modules(gather them ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.env"
+			text="make a stats routine that counts lines of code	(number of perl files, number of C files, lines in each...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.env"
+			text="write a script which looks for commands (binaries) which match a perlregexp (its pretty easy to do)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="get the database viewer cgi in here and add features to it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="get a database ui in my tool collection"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make a perl program to edit the definition of a database	(use the gnome widgets)	get it to decent usability"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="'desc' is a reserved name in MySQL and should not be used as a tablename or field name. Handle this in sanity checks (have a place for alist of reserved words on a per database...). The same goes for 'index' change mapping to VAR SIZED STRING in creating of Mysql DBadd a binary type to the database creation and to mysql"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="check out why I dont have auto completion in the mysql client	Should I put something like	[mysql]	auto-rehash	or something in my ~/.my.cnf file to enable this ?	check it out"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="we want one database to use another ones schema as sub schema	can we just use XML markup and include that database schema ?	well, not under the current syntax since you have to have	the entire schema as a single block but if you make the	syntax a little bit more flexible with sub schemas you can	do it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make all other Db::Remove, Db::Import etc.. use the stats modules"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="my own sql client which runs sql statements against an sql server"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="add diff method to database object which describes the differencesbetween that database and the other"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="add automatic difference generation in database documentation"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="add pictures to the chess databases (of the players and)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make the chess class really read the .pgn files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make the chess class put itself into the database"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make a script to put gnu pgn games into the database"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make a script to put my movie data into the database"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="write descriptions to all enums in all databases"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="improve descriptions in all databases in general"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make users be created on the databases"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make users appear nicer in documentation"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="export to web page both html,ps,pdf,dvi,rtf and other versions"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="update the web page"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="make the 'no circles' test on dbdefs"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="parse statements before you issue them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="If they are select then call select, if not thencall do. This is the basis for starting to do client side protection"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="pretty print the output"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="verify my database automatically (XML::DOM)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.database"
+			text="create tools to work with databases (and add all the import/exportetc stuff to it)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="make the tests actually compare to the required result"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="fix the source_files and project files to also include test options"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="fix the bullshit at the start of the main cook file where all kinds of	executables are called"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="make the test files in perl/bin/Meta/Tests be all tests"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="make their names be just the module they are testing"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="add tests with gui's in them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="disable all tests and compile the damn thing and put it in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="readline.pl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="client_server.pl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="stop running batch tests with system (try the smart version)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="when running via system I need not to have PERL5LIB in theenvrionment (or PATH or other stuff for that matter)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="% developer % substitution does not work in perl modules - look that	over"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="make a perl object which gives you the interface of an object given to	it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="find out how to install commands in readline	and write an object which gives out completion according to a	perl object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="do client/server with RPC"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="make single line server and client"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="create a Pdmt server"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make sure that running fix_hist_single can receive a module relativeto the directory you are in"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="Tool::Aegis should return error when cant find a module or	module doesnt exist"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make a time object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make the Entry hold a time object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make Tool::Aegis supply a time object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="add last line to revision (Tool::Aegis)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="give all changes good names and descriptions"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="history doesnt look good in pod. Put each line on its own or space	in the begining"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="checkout all perl modules and binaries"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="put history back in for perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make the perl check do the fix itself from the outside script"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make example of using it (test) in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make Revision print itself using it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="is there a table formatter in perl ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="print history nicely for perl scripts"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="add a perl check which checks that the HISTORY fields are ok"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="add a script which updates HISTORY in files on demand"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="add a script which updates HISTORY on aeib"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="We already have history in generated docb files. Were talking aboutsource docb files here. Pass over them and replace the revisioninformation in them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="do this on aeib and in history update script which is unified withthe above perl script"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="aeib is the one supposed to update revision inforation in	the files.(in any case we should have a method to do	this so we could move this if it wont work out...)	each language module will do its thing (if they dont	want to do anything - its their stuff...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="for each source file, automatically create docbook type revision	section in a revi subdir of the baseline under .rev suffix"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="include revisions whereever you want"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make a script which passes over perl modules and updates the	revision information in them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="make the same for c++, Python or whatever"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="Aegis.pm: add in_current_change method"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="Aegis.pm: add current_change_description method"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="fix file_hstry.rpt to have the current edition too (is it possible ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="solutions to the history problem	-disable history checks (easy)	-commit using suid program (risky and im not sure how Aegis	will react)	-no dates on files and a add line only in files which are in		the current change"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="another solution to the history problem -	when fixing history commit the fhist module to history	first and then ask for history data"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="do a test for the table stuff (can it print to a string - that is whatI want it for...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.history"
+			text="do the history bit for the LAST time!!! (it must match...:)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="handle the no-cascade in the perl/java/python/docbook cook books	(actually all cookbooks)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="remove all unneeded directories in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="use the cascade method but store all the .deps file in a SINGLEfile"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="make directory names not be hard coded in the cook files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="add comment virtual routine in the lang module"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="implement the perl,c++,python,docbook,java and text version of it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="move printing of doit commands to perl level (cook can be silent)this way you could pretty print and color stuff and also list neededitems for scripts like the log"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="put machine names in the cook options file and make cook read them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="try to unite products more (to be in the same directories...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="write down all the tools Im using"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="take care of the order in which things are generated(make it look nice on a single cpu machine or add control to it...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="turn all link, rule etc files to xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="get link checker for HTML"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="get link extractor and make deps for HTML"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="still having problems with relative stuff in browsers"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="How do I set an outside path ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="why dont I see jpgs in the output ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="relative to non relative and vice versa modules"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="HTML output from docbook does not have DOCTYPE specifications	in it.(need to add it using a script)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.html"
+			text="HTML output from docbook does not pass nsgmls. This could be	due to old stylesheets that need to be upgraded	(I need to upgrade the stylesheets anyway)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="get documentatin about schemas"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="how about working with schemas?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="write schemas for all current DTDs"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="get schemas for docbook"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="get schema validators"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.schemas"
+			text="add schema language to the project"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="graph test (graph.pl) should be fixed"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="color should be restored to batch testing"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="STDOUT is always flushed (autoflush(1) is set at BEGIN) but it may	be an overkill - could I just flush it at end ? check it out"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="use Text::Wrap and an error module to present output messages"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make an exemt from test source file which gets read by some exemption	class on load and gives information about modules which are	exempt from tests"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make revision check appear in my papers (docbook)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make revision check history appear in perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make scripts which update them both"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="checkout all of those and update them all"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="translate the options sgml definitions file into docbook paragraphwhich explains all participants in the project"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make each language module have hook at the begining and end ofa change	for instance-		docbook will update revision information inside			the actual docbook files (at end)		perl will update revision information inside			the actual source code (at end)		def will create databases (at begining)		def will remove databases (at end)		html will update web sites (at end)		cvs will update cvs repositories (at end)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="have a post rule application check for nodes which are"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="files which will check that the file was created(even if the rule was successful...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="have options about priorities of creating targetsand (for instance) defined .chec to be first"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="I will be able to see how many targets there are tocreate and thus see the progress!!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="every edge should have a tag and groups of tags could have meta tagsand so you could fine control which targets are made"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="An option to remove edges from the DAG using a file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="An option to add edges from the DAG using a file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="checking option not to store targets in files but rather in a file	(much quicker)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="perfect the graph object"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make a server object (one that listens to requests...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="make a graph viewer object in TCL/TK"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="Aegis.pm using xs-"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="how come aegis itself doesnt use a dll for aegis operations ?	(how can I use a dll if it doesnt ?)	mail this to the guys"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="write the damn thing"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="outside nodes (stdio.h,Dbi.pm) should be scanned Recursivly!!!	for dependencies (or if not, they should add the nodes	they depened on recursivly and use the cascade method)	those nodes should be marked as 'outside' the project and	the user should have a say about-		1. whether they will be created in the graph at all		2. whether they will be stated to check dates"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pdmt"
+			text="MD5 modules could be used for various purposes but the ideais not just run MD5 on all files. Each transformer wantsto know if the file changed for A PURPOSEFor instance: changing documentation in c++ does not change thefile for the compiler, the file is changed for an RPM packageror for automatic documentation tools. This means that eachtransformer will be activated when things get changed in waysthat reflect its wishes"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="We WANT named args"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="maybe there is a module on CPAN to help us with named	args, prototypes and the like ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="if not, couldnt we write this ourselves?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="I think we should write one ourselves"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="my perl latex conversion is actually tex. make it so"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="do real latex conversion using Pod::LaTeX"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="convert pods to many more formats (docbook, rtf, another text usingPod::PlainText..,pdf,lyx)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="use known perl parsers and not my own (to find uses for instance)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="split the perl module to many more"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="Text.pm has a problem in the exports section in html - where does thiscome from ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="document the arguments passed to functions better (yes, in all	modules)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="perl nroff format does not work"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="How come tex files are still in the perl directory ?(move them to the output directory...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="latex perl does not work"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="join always used as CORE::join"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="reduce number of files in the binary directories"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="add check for no variables inside strings"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="more strict checks on the pod format (do not allow cuts in the middleetc...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="no use of certain functions : CORE::die (except in designated places)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="command line usagedelaration opt style for free variables (the set ones)get all scripts not to accept free variables except array type	(conf scripts of course are excluded since they get executed by	aegis...)This way free fixed variables will have a descriptionAlso add a description for the non free variables"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make the anal(\@ARGV) really work!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make a standard without the [] for the free description"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="pretty print the free variable size decription"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="remove the following-'- ' ' -' '+ ' ' +' '/ ' ' /'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="do general code improvements (all of the previous improvements for all sources...). "
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="do the check for module inclusion in pm and pls"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="todo items must be on their own lines"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="check usaging external module before internal"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="check our usage in text is declared"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="bring back the -w flag in the Lint check for perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="bear in mind that a lot of the complexity that I put in to put up withDOS and Windows is not needed anymore and could be simplified(a lot of code could be removed from the link system or something...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="current dependency calculations in perl are not right. Even ifyou have a correct parsing of perl source code and list every useyou could still use runtime object which were loaded by other modulesand use their methods and this usage dependency would not track thatadd a virtual method to all language modules that return theirfull name (for display purposes). I dont see how this could be donebetter ? No one, not even a best static parser could know whichobjects are passed. Maybe, when we have XML literate programming andwe know which type is returned by each routine (this is a limitto perl) we could add it to the dependency"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="add REVISION tags to pods"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="the name in set_auth is mark"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="finish the simul documentation"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="get simulation framework going"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="register the project at sourceforge"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="do the same as simul but in perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="do an example and see it run!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="do the same as simul but in python"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.simul"
+			text="do an example and see it run!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.vim"
+			text="why doesnt vim understand about locations in files when you move	between changes ? ..:) try to find a way to make it	understand"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.vim"
+			text="make vim disregard the __DATA__ tag so I could edit code nicely	even inside __DATA__"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.vim"
+			text="make vim not think that vars is a special word!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.vim"
+			text="make vim not think that strict is a special word!!!"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.vim"
+			text="add a feature to VIM by which he'll store a chache of all available	modules to perl and color use statements according to that"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.papers"
+			text="ban on microsoft paper"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.papers"
+			text="the tension between capitalism and technologypaper shows the rift between the two and suggests that the currentway (pure capitalism) is not optimal. It shows better optimal pathswithout reduction to socialism with regard to technology"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.papers"
+			text="emphasize the strong connection beween small sizes of modules andgood dependency tracking and better testing (the more your system isbetter the more tests you will do because you dont have to run yourentire test suite for every change - what you run is what really getschanged...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.papers"
+			text="databases crossed one into the other - this means databases that useeach others schemas as sub schemas"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.papers"
+			text="syn flood coordinator warning"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="should they write themselves to a diagram ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="how about UML tools or other diagrams ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="what is XMI and how do I use it ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="what is GML and is there perl code to read it (Graph Markup language)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="remmember to add machines to user descriptions (where can they connectfrom ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="make tables look better (text wraps not nicely in cells)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="are there table cells which could be toggles ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="add a class which can produce a table of all basic types	(this class will also validate them)	sub classes of this type will translate them ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="make the types in the tables link to those types"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="make the enums in the tables link to those enums"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="try to use new sheets (maybe put them in the baseline?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="try to use new DTD (maybe put them in the baseline?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="maybe new sheets/DTD will solve the table numbering problem"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="make my description of the DB be a legal DocBook paragraph"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="put all the database in one document and see that there is a table	list at the end"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="tables do not stretch all the way even though I tell them to	(hope stylesheets or DTD fix that...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="I write enumerations like frame=all this way frame='all'. It could be wrong"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.dbdef"
+			text="create a docbook segment that describes all allowed variable typesin a database definition (and this way the types in a particulardb def could point to them..:)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="make hyperlinks in the FDL"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="make the 'how to license under the GPL' section of the GPL prettier"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="make sure the GNU people got my FDL and GPL"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="do a script to backup my home dir that doenst do the really bigdirectories like cache and stuff"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="personal"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="homedir (only workwhile stuff)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="project"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="ls -lR of the archive"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="outside work"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="etc directory (only worth while stuff)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.backups"
+			text="sign them with pgp"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pod2docbook"
+			text="create a pod2docbook parser"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pod2docbook"
+			text="revamp my pod2docbook module a lot until it gives good results (with"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.pod2docbook"
+			text="use XML::Writer and not the current methodno hacks). And dont make it create a book. Just a Sect"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.problems"
+			text="do we want to move to literate programming so I wouldnt have todo all that bullshit that I'm doing now ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.problems"
+			text="stuff to be done-	put the nice copyright sign in my copyright. (all this in pod translation) check that WRITTEN BY: has mark in it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.problems"
+			text="a source depends on external module m. The modules m changes location. How do you tell the system this ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.problems"
+			text="is the absolute path to m stored in the deps file?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.problems"
+			text="or should the m module be stored in the deps but have a tag thatit belongs to different path ? (this seems like a good approach)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="make a dtd for a description of a site to sync with-	&lt;site&gt;address&lt;site&gt;	&lt;method&gt;ftp&lt;method&gt;	&lt;store_dates_file&gt;filename to store remote dates in&lt;dsdf&gt;	&lt;user&gt;mark2776&lt;user&gt;	&lt;password&gt;kingcrim&lt;password&gt;	&lt;files&gt;		&lt;file&gt;			&lt;name&gt;name&lt;/name&gt;		&lt;/file&gt;	&lt;/files&gt;	&lt;root&gt;filenamewhichisroot&lt;root&gt;	&lt;make_redirect&gt;boolean&lt;/make_redirect&gt;	and a class which does the synching according to this	description.(no more hardcoding of the files in upload)	add this to the build process	As a first approximation, the filename to store remote dates		will only have the date of the last update"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="make an option in the website management script to clean	out the website (and USE it!!!...:)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="creation of directories on upload is way too slow	cant I speed it up?(does the recurse option work?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="only update relevant files (use mdtm function)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="change all .docb stuff to .sgml	(so I could upload them to my site)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="change cook to reflect that"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="upload my sgmls (yahoo does not allow .docb in the site	so I have to change names to .sgml but if they're	changed it's ok to upload)	Do that with paper sources and database auto generated	def sniplets"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="think of a way to upload my def files too.(def is not allowedin yahoo)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add navigation stuff (how do I do that in a cool way ?) This means	that I could go back to my homepage from any position	(maybe even frames where I could see at which place in the	site I am...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="fix some links in my homepage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="move my web page to docbook and use the onehtml output"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add a guest book to my homepage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add a counter to my homepage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add linux logos to my homepage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add a photo to my homepage"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="get some nice background there"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="add a title (so the title of my browser will change when I'm inmy homepage)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="What if I have a list of people that want to be updated whenever	I do an integration ? do that as part of aeipass"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="what if I want my site to have an icon like Yahoo ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="how do I add linux promotion buttons to my set and where do Iget those ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="tool in perl to update only new parts of web site (not to uploadfiles which are not updated)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.website"
+			text="an option to have a date on my web site which says when it was lastupdated"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.graph"
+			text="make test graph test work"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.graph"
+			text="do the loops to check circular deps in perl code"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.tt2"
+			text="why cant I load the Date plugin without using it explicitly inmy code ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.tt2"
+			text="why dont I get error for things like [% kuku %] ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="the following methods on position should be supported-	thereaten ? (pos1,pos2,s)		return true if there is a piece of side s in pos1 and		a piece of side s^ is pos2 and the first threatens the		second	move (pos1,pos2)		checks that there is a piece in pos1		checks that that piece can move to pos2		moves the piece to pos2	which_piece_can_move(pos,side)		returns the position at which there is a piece of side		side		that can move to pos		if there is more than one - issues an error	threaten ? (pos,s)		does side s threaten position pos ?	can_move(pos1,pos2)		checks that there is a piece in pos1		and it can move to pos2"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="now parse the pgn file correctly and add up the moves"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="print back the pgn file correctly. Things to pay attention to-	castles (short and long)	Shortcuts for pieces before moves	Pawns do not need shortcuts	If there is a check add a +	if there is a mate add an #	if a piece eats a piece add an x	if there is a conflict (two same pieces which both can move		to the same location add the row of the piece. If it		is the same, add the column (they both cannot be		the same...)	Queenings. add =[shortcut] after the queening move	Double checks ++. (I am not sure that gnu support those...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="legal stuff that needs to be sorted out-	Castles only made if king didnt move	Soldiers killing in diagonal only if the soldier in front of	them moves 2 steps in the STEP before* these types of checks are possible only when you have a full!!!	game"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="Math::Digits which gives a routine that calcs number of digits in anumber and a routine which prints a number with 0 in front of it untilit reaches a number (0 padding)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="Text::Utils which gives the following routines"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="calcs longest string in a list. (maybe that should be in List ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="fills up a string with character until it reaches a certain length"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.test"
+			text="Use those two for the testing"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.baseline"
+			text="why doesnt cleanup remove empty dirs ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.debug"
+			text="here is a scenario-	0. make a change	1. get the Perl.pm file in	2. watch the text checks get performed	why?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make my description look nicer"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make the copyright description nicer"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="write a tool to extract just the code from perl modules	(then change the dependency mechanism to depend on those	snipplets and not the original source file)	This way changes to documentation will not cause re	compilation"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="add homepage or download for perl pods"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="bring down dependencies to the function level ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.rule"
+			text="in the rule.d files which are generated there is an 'unsplit ':'[search_list]' or something at the end which could be shortenedsince we already have a path ready which is ':' delimitedreplace with [base_search_path]"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.rule"
+			text="also put all the rule code into a Lang module(tool rule to a tool like the rest)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cvs"
+			text="handle cvs and aegis integration"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cvs"
+			text="lock the cvs repository when doing integrations"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cvs"
+			text="create changes of whatever was updated in the cvs	repository"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cvs"
+			text="at integration end put all the updated files into the	cvs repository and unlock it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cvs"
+			text="how do you sync CVS history and aegis history ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="add a report to show all test files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="add a report to show all source files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="give all reports to peter miller"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="suggest to aegis mailing list to store aegis information in xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="move aegis template to xml and make perl classes to read it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="bring back file templates"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="cant we make the aegis config file more silent so we wont see allthat output on the screen ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="a feature in aegis not to remove development directories ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="problem with adding files with '$' in their names	The Quote does not insulate them well (it should single	quote and in fact in double quotes)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="'If no quoting is required, not quotes will be inserted' typo in	man 5 aesub"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="do you have to have that 'leave the integration directory warning'"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="what is that for ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="Why cant we have options to make sure that same files are not checked"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="out by different changes ? One option in the aegis config which"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="prevents changes (in general) from checking same files (first to"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="checkout gets to checkout and later check outs fail) and on a per"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="change basis in aeca which prevents a specific change from checking"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.aegis"
+			text="out files alerady checked out by other changes"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.text"
+			text="activate text spelling (use ispell)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.text"
+			text="make a database for spelling in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.text"
+			text="make an executable to run the speller on text files which will"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.text"
+			text="use the database in the baseline (it will check it out if neccessary)pass it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.link"
+			text="unite the link executables"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.link"
+			text="make the link cookfile conform to the standard"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lilypond"
+			text="install lilypond tex fonts so I could see lilypond dvi files without	an the fonts being there - see what the lilipond documentation	has to say about it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lilypond"
+			text="add lilypond images"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lilypond"
+			text="produce dependencies for lilypond (there is a -I directive to lilypondhurra). There is also a -M flag - all thats left to do isconversion"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lilypond"
+			text="add a pop song example (twinkle-pop exmplae in the distro)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.cook"
+			text="create a change and just take a pm module into the change (Lily.pm forexample). run a build and see if all the lilypond files get updatedI dont think they willFix the problem"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="files in a directory called STAMP"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="The files are-"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="LAST_AECP"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="LAST_AERM"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="LAST_AENF"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="the time stamps on them will be keps according to the last"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="modification times of the appropriate actions"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.stamp"
+			text="Problems-	what if I do aecp (it checks out this file and touches it)	and then I undo it ?	send a mail to the newgroup about it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="files are placed in a wild directory"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="each file describes (with perl regexps) a set of baseline files	(or several sets)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="each file is automatically transformed to that set"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="examples of such-	c++ manifest	pm manifest	perl manifest	cook manifest	pl manifest"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="There is a problem that whenever you aerm or aenf (not aecp mind you)the manifest might change"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="The solution: have a file in the baseline which contains the date ofthe last aerm/aenf and have it updated by aenf,aerm commands"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.wildcard"
+			text="all target wildcards will depend on that file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="find out how to work with CVS env vars and use them"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="make the patch to the aspell real (in cvs tree)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="add a patch to sgml-tools to create have a -o option"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="how come I dont get an error from sgmltools when it cant write - patchthat"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="add option to aspell to work from stdin (file must be '-')"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.open_source"
+			text="make patches and store them in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.spelling"
+			text="add spell checking to docbook"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.spelling"
+			text="dictionaries in the baseline which are passed to the speller	(through which ofcourse)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.spelling"
+			text="dependency of all docbook on the dictionaries"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.text"
+			text="clean up the text directory in the baseline (too many files and nostrong evident convention)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="There will be an xml file with data sets description in it-dataset name, dbnametowhichitbelong, baselinedir"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="There will be generated, automatically, a .d file for that datasetto show that it cascade depends on the those baseline files"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="there will be a dataset.v file which will make sure that thedataset it ok by importing it into a database"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="todo items in XML format which are converted into docbook sectionsfor instance - each database could point to its todo items"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="parsing errors from most common tools (gcc etc) and transformingthem to some standard XML so I could then start editors on themetc"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="database inheritance (you know what I mean)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="do my own XML::Writer with more options (that can check that I'm working	according to a read DTD ?!?). Or maybe just add to the current	writer ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="How do I write a DTD for my own stuff ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="add timeouts for tests as suggested in the aegis group"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="document the profiled malloc idea"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="compare build times on 2.4 and 2.2	(send report to kernel people ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="in code checks check that the CHANGE: in DETAILS lists the right	change in which the file was introduced"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="make script which puts editing history into each file	(should that script run at integration or what ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="collect ctag information for perl"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.ideas"
+			text="add more options to creation of stub and even get them via curses	or UI like create a perl object with so and so methods,	and so and so papa classeach time aenfu is made it will call the module of that(or aerm will put bogus products in the change ?)does perl compilation depend on the text only or on the files whichget used ? if it is we can put set no-cascade on rules for creatingperl object code...:)How about Python ?idea - tabular object which just stores and retrieves tabular dataTo help in managing the the text tables (which could have lots of dataand also could have binary data in them (pictures etc...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="learn how to set up a homepage on sourceforge"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="set up a homepage for Windows2Linux"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="register www.veltzer.net"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="set up a project for Pdmt"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="send a lot of bugs to a lot of free software maintainers that Ifound"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="change my password in all sites	(freshmeat, redhat etc included)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.internet"
+			text="make a list of all of those"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.general"
+			text="move all my todo items to the computer"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.general"
+			text="use a todo organizer(for my stuff in my notes dir too)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.general"
+			text="organize the stuff there into phones too"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.general"
+			text="use some free organizer for all of that that you know where itsaves things"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="move my backups to myspace.com and backup everything important there(learn how to work with pgp and sign all my data)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="clean up visto"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="add in list.txt configuring /etc/man.config to include	/local/tools/man (and ofcourse makewhatis as root)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get more memory from my brother"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="backup everything"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="kmail stopped working for me. get a version and compile it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get 2.4.2 kernel"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="compile and install it. (grub - remmember ?)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="run it (make sure that linux link in /usr/src/ points to it)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="compile isdn4k and install it.(with new kernel)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="compile ppp and install it.(with new kernel)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="try to run ISDN on new kernel"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="make in the list.txt machine installation file that the extra numberin /usr/share/texmf/web2c/texmf.cnf should be increased to 20,000(for pdfjadetex to run...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="write the following stuff for setting up pilot on Linux-"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="chmod 666 /dev/ttyS0"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="ln -s ttyS0 pilot"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="start kpilot and you're on your way"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get a good dvi viewer (KDE or GNOME)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get a good html designer from the web (KDE or gnome)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="DSL from bezek"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get Lyx and install it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="make the cd burner work"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="fix problem with ISDN on new kernel (hope the mailing list answers)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="upgrade netscape"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="upgrade to new gnome"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="check what are the differences between the old kernel I configured and	this one and make sure that I dont want another"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.machine"
+			text="get some good backup software with a UI and run it instead of myscript"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.lit"
+			text="add a few examples and some perl examples"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="dont use GNU long options - write my own code"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="add an Mopt object which represents many options"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="add mutually exclusive options option to the Opts module"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="values to be actually changed"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="run to quit the Gtk event loop"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="quit to exit in a harsh manner (exit)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.opts"
+			text="kill the dialog to be connected with the same event as quit"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="file selection boxes to pop up after change is pressed"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="try to place dialog in the middle of the screen"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.misc"
+			text="make directory not resizble"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.coloring"
+			text="detect which terminal it is and only color if so"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.gtl"
+			text="do a hellogtl program"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.mtl"
+			text="do a hellomtl program"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.inti"
+			text="get inti over here and get a c++ demo program for it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="finish the basic object, read them and write them to pgn,read them and write them to xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="do the following scripts-"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="pgn_stats - show some statistics about a pgn file"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="pgn_unite - unite several pgn files to a single one"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="pgn_filter - filter a pgn file for same games, not ending games etc"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="pgn_to_xml - convert from pgn to xml"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.chess"
+			text="xml_to_pgn - convert from xml to pgn"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.media"
+			text="store media (any type of binary) with description and manycategorizations. This could be used for many purposes-picture galleries, mp3 collections etc"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="a lice sub dir in the baseline"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="there there will be an xml file with all known licenses(with short and long versions, additions for special languages etc...)"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.license"
+			text="A software binary base_tool_license.pl which will aecp or aenf whateveris needed to relicense a set of files and will change their licenses"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make sure that use statements always use external and then internalmodules"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make a specific ordered list that specified the way by which use	statements should be made - for internal and for external	Should this list depend on the use tree or inheritance	tree ?"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="make a standard about set_free_stri('[names]') (about the braces Imean) and enforce it"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="in addition to the Enum option to be added to Opts.pm add a Set option"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.perl"
+			text="add option to checkout and edit in base_tool_grep"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.tools"
+			text="bring over an editor or viewer for XML so we could look and/or editthe XML nicely"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.tools"
+			text="create the tar.gz or tar.bz2 packagers"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.sql"
+			text="there is a module on CPAN called SQL::Statement which can Parse SQL	The possibilities are endless-	0. better security (know at client runtime if he is allowed/	not allowed to access the tables he will access)	1. checking that the SQL syntax is ok	2. other stuff"
+			done="false"
+			/>
+		<item
+			subject_ref="subject.autoconf"
+			text="make small autoconf snipplets to detect libraries that I need"
+			done="false"
+			/>
+	</items>
+</todo>

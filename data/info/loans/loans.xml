@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE loans PUBLIC "-//META//DTD XML LOANS V1.0//EN" "http://www.veltzer.net/xml/dtd/loans.dtd">
+<!-- todo:
+notes:
+	No marking of books, movies, or music CDS here!!!!
+	use
+		xmlx/lit/lit.xml
+		xmlx/movies/movies.xml
+		xmlx/music/music.xml
+		for those things
+	The things that go into this file are regular belongings.
+-->
+<loans>
+	<loan
+		to="Yaron Dorman"
+		item="Synth sustain pedal"
+		/>
+	<loan
+		to="Adam Dunski"
+		item="Acoustic guitar"
+		/>
+	<loan
+		to="Doron Veltzer"
+		item="Bag with stuff for guitars (pics, tuners, belts etc)"
+		/>
+	<loan
+		to="Doron Veltzer"
+		item="Stereo system with amp and cd played and two speakers with stands"
+		/>
+	<loan
+		to="Ofra Rosen"
+		item="Classical guitar"
+		/>
+	<loan
+		to="David Alexander"
+		item="electric kettle"
+		/>
+</loans>

@@ -1,0 +1,9 @@
+- to make pulse audio alive again use:
+	pulseaudio -k
+
+- if the sound configuration shows no devices simply remove them and reinsert them
+	into the kernel.
+	lspci -k
+	and
+	lsusb
+	will give you hints about what needs to be reinserted.
