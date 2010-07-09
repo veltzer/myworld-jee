@@ -1,24 +1,17 @@
 weekend:
-- install eclipse cpp and netbeans cpp versions.
-	create a workspace for my demos in eclispe and netbeans.
-	commit the workspace.
-
+-1. one more bt training.
 0. store meta as a git repository. make it work.
-1. do the ACE thread pool example.
+1. demo stuff:
+	- do the ACE thread pool example.
+	- improve the example that stamps binaries (add the digest feature).
 2. do better beutification of my code (use uncrustify better).
 3. handle my mail in_tray.
 4. handle my real in_tray.
-5. see more of the math lectures.
-6. see three more movies.
-
-learning:
-blog:
-0. get to wordpress running with all permissions on /var/www for root.
-1. blog about it.
-movies:
-1. piano practice (x2).
-3. backup everything (find a good way to do it).
-
+5. finish the math lectures and mark them.
+6. see one more movie.
+7. study the jboss intro that I'm supposed to teach.
+8. piano practice.
+9. backup everything (find a good way to do it).
 
 1. start working on the amit chords.
 2. see 1 more movie.

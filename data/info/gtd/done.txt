@@ -9136,3 +9136,11 @@ installed new version of tomcat and documented it.
 installed new version of netbeans and documented it.
 installed new version of eclipse and documented it.
 make sure that I can use myworld from within netbeans.
+saw movie and marked it.
+eclipse can now build my demos and has a script to run itself.
+netbeans can now build my demos and has a script to run itself.
+piano practice.
+got to wordpress running with all permissions on /var/www for root.
+blogged about wordpress security again.
+some bt training.
+saw movie and marked it.
