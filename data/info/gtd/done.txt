@@ -9135,3 +9135,4 @@ downloaded new version of tomcat and eclipse and netbeans.
 installed new version of tomcat and documented it.
 installed new version of netbeans and documented it.
 installed new version of eclipse and documented it.
+make sure that I can use myworld from within netbeans.

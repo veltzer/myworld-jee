@@ -8,7 +8,6 @@ import org.glassfish.embed.EmbeddedException;
 import org.glassfish.embed.EmbeddedInfo;
 import org.glassfish.embed.ScatteredArchive;
 import org.glassfish.embed.Server;
-import org.glassfish.embed.util.EmbeddedUtils;
 import org.meta.richfunction.Arguments;
 import org.meta.richfunction.RichFunction;
 import org.meta.progress.Progress;

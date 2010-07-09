@@ -1,5 +1,4 @@
 weekend:
-- make sure that I can use myworld from within netbeans.
 - install eclipse cpp and netbeans cpp versions.
 	create a workspace for my demos in eclispe and netbeans.
 	commit the workspace.
