@@ -1,5 +1,5 @@
 TbBsCompanies 55
-TbBsCourses 96
+TbBsCourses 97
 TbDbDatabase 0
 TbDbField 0
 TbDbFunction 0
