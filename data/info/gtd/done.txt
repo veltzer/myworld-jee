@@ -9144,3 +9144,8 @@ got to wordpress running with all permissions on /var/www for root.
 blogged about wordpress security again.
 some bt training.
 saw movie and marked it.
+made a brilliant stamping binaries example.
+expanded makefile examples.
+installed ear master, tried to take care of difficulties, documented it and practiced it.
+put new light in car.
+some bt training.
