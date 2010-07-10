@@ -9150,3 +9150,4 @@ installed ear master, tried to take care of difficulties, documented it and prac
 put new light in car.
 some bt training.
 got git server running with instructions about how to use it.
+now using .gitignore across the board (better since the file is source controlled).
