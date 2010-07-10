@@ -9149,3 +9149,4 @@ expanded makefile examples.
 installed ear master, tried to take care of difficulties, documented it and practiced it.
 put new light in car.
 some bt training.
+got git server running with instructions about how to use it.
