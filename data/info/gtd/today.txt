@@ -1,15 +1,50 @@
+26:
+- read the grid racing instructions.
+- photo passport and sent images to inna.
+- cut nails.
+- do an application that stores movies that I have seen.
+	Simple UI.
+	Use it.
+	Show the data in my blog.
+- investigate the remote debugging issues. Document them.
+- buy food.
+- see one movie.
+- do one thing for the shay project.
+- piano training (bass lines).
+	- write more bass lines.
+- night walk.
+	
+27:
+checkup that they got it and they are handling it.
+
+- study gimp and do an icon for my site.
+- see at least two more lectures on the history of art.
+- start working on the bass lines (piano training).
+
+interbit:
+- get to slide 200 of the swing ex slides.
+- do at least one complex exercise.
+	-waiting for a complex thread to do it's thing and signaling it
+	to stop.
+	-write a swing example that prints it's thread status.
+	-do an example where we analyze a swings application using jconsole
+	or jvisualvm.
+- check that all the exercises of the swing ex compile nicely,
+	add them to my demos.
+	- study the swing extreme material and have demos ready.
+		(add demos to my demos folder with an eclipse project).
+demos:
+misc:
+- write an email back to interbit.
+- handle my mail in_tray.
+
 weekend:
 - do better beutification of my code (use uncrustify better).
 - integrate the ACE (from the interbit integration directory) stuff.
 - do the ACE thread pool example.
-- see one more movie.
-- store meta as a git repository. make it work.
-3. handle my mail in_tray.
-4. handle my real in_tray.
-5. finish the math lectures and mark them.
-7. study the jboss intro that I'm supposed to teach and integrate it.
-8. piano practice.
-9. backup everything (find a good way to do it).
+- handle my real in_tray.
+- finish the math lectures and mark them.
+- backup everything (find a good way to do it).
 
 1. start working on the amit chords.
 2. see 1 more movie.

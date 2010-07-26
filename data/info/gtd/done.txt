@@ -9151,3 +9151,121 @@ put new light in car.
 some bt training.
 got git server running with instructions about how to use it.
 now using .gitignore across the board (better since the file is source controlled).
+stored the meta package in a git repository.
+pdmt is now running without errors.
+make the meta package work again.
+saw movie and marked it.
+drums training.
+added jenable project to my git projects.
+made a backup of my system state to dropbox with a ready script.
+nightwalk with lectures.
+fixed descriptions of my git repositories.
+wrote another idea for the dd book.
+saw movie and marked it.
+drums training.
+upgraded my main machine and my laptop.
+cloned my repository to the laptop.
+commited first change from my laptop.
+wrote a script to clone a dpkg selection.
+worked for rafael and sent hours report.
+added another idea about udev to my examples directory.
+worked for rafael and sent hours report.
+wrote and idea about a dd article.
+took care of my inbox.
+integrated material from interbit.
+downloaded various versions of jboss.
+added yet another course to my list of courses.
+upgraded my machine.
+read the jboss material.
+taught for interbit and sent hours report.
+cought up on my email.
+drums training.
+saw movie and marked it.
+taught for interbit and sent hours report.
+bt training.
+saw educational movie and marked it.
+integrated new extreme swing material into my material.
+saw movie and marked it.
+drums training.
+piano training.
+lesson with amit.
+added bass lines to my music collection.
+night walk with lectures.
+transferred all the TED talks that I saw into my own internal book keeping.
+all of my special content in wordpress is now plugins. Removed the iframe plugin.
+removed all unnecessary plugins from my website.
+added my own theme to my site. My site reworked to use my new theme.
+saw movie and marked it.
+drums training.
+some bt training.
+fixed up site even more.
+downloaded cracked version of Ear master and using it.
+fixed up the picasa albums showing problem on my blog.
+took care of all urgent problems in my blog.
+fixed up data in my picasa albums.
+fixed up my picasa page even more.
+drums training.
+piano practice.
+more improvements to my blog.
+moved all blog stuff into one place.
+saw educational video and marked it.
+some p work.
+saw movie and marked it.
+drums training.
+made my examples build on the laptop.
+updated my laptop.
+got newest material on the laptop.
+prepared myself for the extreme swing course.
+walk with lectures.
+some p work.
+taught for interbit and sent hours report.
+took care of sealing the roof.
+took care of my inbox.
+learned more extreme swing.
+cleaned up some of my inbox.
+taught for interbit and sent hours report.
+took care of the roof business for the house.
+worked for rafael and sent hours report.
+nose hairs.
+saw movie and marked it.
+drums training.
+did lots of work on my blog.
+saw movie and marked it.
+drums training.
+solved another riddle.
+read an audio book and marked it.
+added another example to my system programming examples.
+added a testing database to do various testing on MySQL.
+another blog post (short one).
+answered another question by my brother.
+improved the riddle that I added.
+changed my screen emulator to tmux (instead of screen).
+prepared for the swing course more.
+taught for interbit and sent hours report.
+saw movie and marked it.
+drums training.
+many more enhancements to the lilypond project.
+p work.
+saw movie and marked it.
+drums training.
+integrated stuff from my laptop.
+saw movie and marked it.
+drums training.
+changed my file systems to be mounted with noatime.
+added yet another blog post idea.
+p work.
+saw movie and marked it.
+drums training.
+full p fixup.
+fix java compilation errors and merge them with the demos build.
+merge the build of demos with the build of java.
+full integration of the java build process with the regular build.
+wrote another blog idea.
+saw movie and marked it.
+drums training.
+another post on my blog.
+bought a few more games for the PS3.
+sent fax to bezeq (again).
+raced some in the racing game.
+some p work.
+some p work.
