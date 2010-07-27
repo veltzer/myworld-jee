@@ -1,7 +1,8 @@
 26:
-- read the grid racing instructions.
-- photo passport and sent images to inna.
-- cut nails.
+- race more.
+- scan passport and sent images to inna.
+- do an applications that stores my done and todo items.
+
 - do an application that stores movies that I have seen.
 	Simple UI.
 	Use it.
@@ -10,8 +11,6 @@
 - buy food.
 - see one movie.
 - do one thing for the shay project.
-- piano training (bass lines).
-	- write more bass lines.
 - night walk.
 	
 27:
