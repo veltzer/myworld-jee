@@ -9279,3 +9279,89 @@ pacification.
 improved my bass lines a lot.
 night walk with lectures.
 saw movie and marked it.
+did better handling of names in my blog.
+saw movie and marked it.
+drums training.
+did many malloc examples.
+visited my parents to try and fix their computer.
+some p work.
+some p work.
+added yet another song (doxy) to my lilypond collection.
+good lunch.
+yet another song to my song collection (my funny valentine).
+saw movie and marked it.
+drums training.
+added yet another example to my demos.
+some p work.
+saw movie and marked it.
+drums training.
+added some ideas to the multi threading code.
+yet another example to my demos.
+yet another example about ld preload.
+lesson with amit.
+added yet another song (come rain or come shine) to my song collection.
+added yet another study page to my pages of study.
+order the house a bit.
+drove niece for my brother.
+some p work.
+saw movie and marked it.
+drums training.
+some p work.
+night walk with lectures.
+filtered out some spam mail.
+some p work.
+some p work.
+some bt training.
+some p work.
+saw movie and marked it.
+drums training.
+eat good lunch, get phone.
+prepared for the phpunit course. Did many examples. Integrated them.
+improved the php material, integrated all examples into git.
+taugt for interbit and sent hours report.
+saw movie and marked it.
+some p work.
+win one event in racing.
+some p work.
+win another race (demolition derby).
+some p work.
+saw movie and marked it.
+won another two races.
+did another user space example.
+some p work.
+won another race.
+now working with the default gitweb configuration file.
+exported one more project via git.
+improved my git howto and my demos build.
+saw movie and marked it.
+drums training.
+upgraded my blog to 3.0.1.
+music is playing off of my site.
+upgraded my laptop.
+upgraded my home machine.
+got data for the optimus project.
+saw movie and marked it.
+drums training.
+did one good thing for my blog (split my plugins).
+payed bills.
+saw movie and marked it.
+drums training.
+some p work.
+bought food for the house.
+added another book to my collection of books about direct democracy.
+night walk with lectures.
+finished hearing lectures and marked them.
+some p work.
+won one more race.
+some p work.
+some p work.
+piano practice.
+get to hebrew in my music list.
+saw movie and marked it.
+drums training.
+night walk with lectures.
+did jquery on my blog (major work).
+more fixes to my blog.
+saw movie and marked it.
+saw movie and marked it.
+played computer game and marked it.

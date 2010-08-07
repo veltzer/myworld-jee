@@ -1,20 +1,39 @@
-26:
-- race more.
+weekend:
+- one more thing on my blog ->
+	put my song in the database too.
+	(remove it from the upload dir).
+- one walks!
+- fix the danny sanderson song (it is on the site then finish it!).
+- see 2 movies.
+- one more piano practice.
+- full p work.
+- clean some of my inbox.
 - scan passport and sent images to inna.
-- do an applications that stores my done and todo items.
+- do the auto installation of my blog.
+- clean some of my intray.
+
+- do one thing for the shay project (finish the import and show it in a statement).
+
+- win one more contest in the races.
+
+3: morning
+- write the amit version of the "come rain or come shine" chords.
+	publicize on my blog.
+
+- do an application that stores my done items in the database.
+- store all md5 sums in the database and erase them from the meta
+	project where they are causing problems.
+
+evening:
+- evening - buy a good chair for the computer.
+- buy food.
 
 - do an application that stores movies that I have seen.
 	Simple UI.
 	Use it.
 	Show the data in my blog.
 - investigate the remote debugging issues. Document them.
-- buy food.
 - see one movie.
-- do one thing for the shay project.
-- night walk.
-	
-27:
-checkup that they got it and they are handling it.
 
 - study gimp and do an icon for my site.
 - see at least two more lectures on the history of art.

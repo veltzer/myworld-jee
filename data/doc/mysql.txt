@@ -58,7 +58,7 @@
 - moving data between tables:
 	INSERT INTO TABLE2 (COL1, COL2, COL3) SELECT COL1, COL4, COL7 FROM TABLE1;
 
-- adding a key to a table:
+- adding a key/index to a table:
 	- regular search key without giving name to the key:
 	alter table TbIdPerson add key (firstname);
 	- regular search key with giving name to the key:
@@ -79,3 +79,9 @@
 	convert -thumbnail 64x64 mysql.png ../mysql.png
 	if you want to convert a whole bunch:
 	for x in *.gif; do y=`basename "$x" .gif`; convert "$x" "$y.png"; echo $y;done
+
+- showing help from the command line:
+	\h
+- history from the command line:
+	just scroll up and down using the arrows
+	maybe there is a set of history commands but I haven't found them.
