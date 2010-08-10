@@ -1,4 +1,25 @@
-sunday:
+10:
+- write up a list of tools and text about them.
+	vmstat
+	iostat
+	mpstat
+	pidstat
+	sar, sadc(8), sa1(8), sa2(8), sadf(1), isag(1)
+	free, uptime
+	iotop, ionice
+	slabtop
+	jnettop
+	top
+	/proc, /sys filesystems
+	ps pstree pgrep
+	skill, pkill, kill, killall, killall5
+	nice, renice, snice
+	netstat, nc
+	atop, atopsar
+	fuser, pidof, lsof
+	crash
+	gdb
+	gcore
 - put my google calendar on my site (the interbit one).
 - fix the danny sanderson song (it is on the site then finish it!).
 - piano practice.

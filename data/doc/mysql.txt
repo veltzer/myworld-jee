@@ -65,6 +65,8 @@
 	alter table TbIdPerson add key firstname(firstname);
 	- dropping the key:
 	alter table TbIdPerson drop key firstname;
+	- make a column be unique:
+	alter table TbBsCompanies add unique(slug);
 	- unique key made up of several columns without giving name:
 	alter table TbIdPerson add unique key (firstname,surname,othername,ordinal);
 
