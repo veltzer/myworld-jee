@@ -2,7 +2,7 @@
 --
 -- Host: localhost    Database: myworld
 -- ------------------------------------------------------
--- Server version	5.1.41-3ubuntu12.3
+-- Server version	5.1.41-3ubuntu12.6
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -25,15 +25,18 @@ DROP TABLE IF EXISTS `TbBsCompanies`;
 CREATE TABLE `TbBsCompanies` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
+  `slug` varchar(50) NOT NULL,
   `remark` varchar(256) DEFAULT NULL,
   `url` varchar(256) DEFAULT NULL,
-  `imagePath` varchar(256) NOT NULL,
+  `smallImage` mediumblob,
   `fromDate` date DEFAULT NULL,
   `funcTeaching` tinyint(1) DEFAULT '0',
   `funcConsulting` tinyint(1) DEFAULT '0',
   `funcCertification` tinyint(1) DEFAULT '0',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=latin1 COMMENT='this is a list of the companies I taught in';
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `slug` (`slug`),
+  UNIQUE KEY `name` (`name`)
+) ENGINE=InnoDB AUTO_INCREMENT=56 DEFAULT CHARSET=utf8 COMMENT='this is a list of the companies I taught in';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,7 +50,7 @@ CREATE TABLE `TbBsCourses` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=98 DEFAULT CHARSET=latin1 COMMENT='this is the list of courses that I teach';
+) ENGINE=InnoDB AUTO_INCREMENT=99 DEFAULT CHARSET=utf8 COMMENT='this is the list of courses that I teach';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +66,7 @@ CREATE TABLE `TbDbDatabase` (
   `description` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -83,7 +86,7 @@ CREATE TABLE `TbDbField` (
   UNIQUE KEY `name` (`name`),
   UNIQUE KEY `type` (`type`),
   KEY `dbTableId` (`dbTableId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -101,7 +104,7 @@ CREATE TABLE `TbDbFunction` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `dbDatabaseId` (`dbDatabaseId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +122,7 @@ CREATE TABLE `TbDbProcedure` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `dbDatabaseId` (`dbDatabaseId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -137,7 +140,7 @@ CREATE TABLE `TbDbTable` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `dbDatabaseId` (`dbDatabaseId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -155,7 +158,7 @@ CREATE TABLE `TbDbTrigger` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `dbDatabaseId` (`dbDatabaseId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -173,7 +176,7 @@ CREATE TABLE `TbDbUser` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `dbDatabaseId` (`dbDatabaseId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -186,7 +189,7 @@ DROP TABLE IF EXISTS `TbIdGrp`;
 CREATE TABLE `TbIdGrp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -206,7 +209,7 @@ CREATE TABLE `TbIdGrpPerson` (
   CONSTRAINT `TbIdGrpPerson_ibfk_1` FOREIGN KEY (`personId`) REFERENCES `TbIdPerson` (`id`),
   CONSTRAINT `TbIdGrpPerson_ibfk_2` FOREIGN KEY (`personId`) REFERENCES `TbIdPerson` (`id`),
   CONSTRAINT `TbIdGrpPerson_ibfk_3` FOREIGN KEY (`groupId`) REFERENCES `TbIdGrp` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -229,7 +232,7 @@ CREATE TABLE `TbIdPerson` (
   KEY `firstname` (`firstname`),
   KEY `surname` (`surname`),
   KEY `othername` (`othername`)
-) ENGINE=InnoDB AUTO_INCREMENT=46 DEFAULT CHARSET=latin1 COMMENT='this is one person and can be used for everything...';
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COMMENT='this is one person and can be used for everything...';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -248,7 +251,7 @@ CREATE TABLE `TbIdPersonId` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `importance` (`importance`,`personIdTypeId`),
   KEY `personIdTypeId` (`personIdTypeId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='This is an actual persons id for something.';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This is an actual persons id for something.';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,7 +269,7 @@ CREATE TABLE `TbIdPersonIdType` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_2` (`name`),
   KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='This is an id type like israeli id card, dr lic and more';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='This is an id type like israeli id card, dr lic and more';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -284,7 +287,7 @@ CREATE TABLE `TbLcContinent` (
   PRIMARY KEY (`id`),
   KEY `name` (`name`),
   KEY `locPlanetId` (`locPlanetId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -300,7 +303,7 @@ CREATE TABLE `TbLcGalaxy` (
   `description` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -316,7 +319,7 @@ CREATE TABLE `TbLcNamed` (
   `remark` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1 COMMENT='locations in the world (computer, home, cinema, etc)';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='locations in the world (computer, home, cinema, etc)';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -334,7 +337,7 @@ CREATE TABLE `TbLcPlanet` (
   PRIMARY KEY (`id`),
   KEY `name` (`name`),
   KEY `locGalaxyId` (`locGalaxyId`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -346,10 +349,15 @@ DROP TABLE IF EXISTS `TbMsLilypond`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TbMsLilypond` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `source` mediumblob NOT NULL,
+  `uuid` char(36) NOT NULL,
+  `filebasename` varchar(100) NOT NULL,
+  `ly` mediumblob NOT NULL,
   `pdf` mediumblob NOT NULL,
   `ps` mediumblob NOT NULL,
   `midi` mediumblob NOT NULL,
+  `wav` mediumblob,
+  `mp3` mediumblob,
+  `ogg` mediumblob,
   `title` varchar(100) DEFAULT NULL,
   `subtitle` varchar(100) DEFAULT NULL,
   `composer` varchar(100) DEFAULT NULL,
@@ -357,8 +365,9 @@ CREATE TABLE `TbMsLilypond` (
   `style` varchar(100) DEFAULT NULL,
   `piece` varchar(100) DEFAULT NULL,
   `poet` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `uuid` (`uuid`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -377,7 +386,7 @@ CREATE TABLE `TbRsBlob` (
   `data` blob,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -397,7 +406,7 @@ CREATE TABLE `TbRsColor` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name_2` (`name`),
   KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=754 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=754 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -416,7 +425,7 @@ CREATE TABLE `TbRsConfig` (
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -434,7 +443,7 @@ CREATE TABLE `TbRsImage` (
   `description` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -452,7 +461,7 @@ CREATE TABLE `TbRsTag` (
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -471,7 +480,7 @@ CREATE TABLE `TbRsText` (
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -488,7 +497,7 @@ CREATE TABLE `TbTgTag` (
   `remark` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -501,7 +510,7 @@ DROP TABLE IF EXISTS `TbTgTagGrp`;
 CREATE TABLE `TbTgTagGrp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -520,7 +529,7 @@ CREATE TABLE `TbTgTagGrpMembers` (
   KEY `fk_tagGrpId` (`tagGrpId`),
   CONSTRAINT `TbTgTagGrpMembers_ibfk_1` FOREIGN KEY (`tagId`) REFERENCES `TbTgTag` (`id`),
   CONSTRAINT `TbTgTagGrpMembers_ibfk_2` FOREIGN KEY (`tagGrpId`) REFERENCES `TbTgTagGrp` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -539,7 +548,7 @@ CREATE TABLE `TbTgTagRelation` (
   KEY `toTagId` (`toTagId`),
   CONSTRAINT `TbTgTag_ibfk_1` FOREIGN KEY (`fromTagId`) REFERENCES `TbTgTag` (`id`),
   CONSTRAINT `TbTgTag_ibfk_2` FOREIGN KEY (`toTagId`) REFERENCES `TbTgTag` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -561,7 +570,7 @@ CREATE TABLE `TbWgWord` (
   KEY `wordGroupId` (`wordGroupId`),
   KEY `text` (`text`),
   KEY `wordGroupId_2` (`wordGroupId`,`text`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -579,7 +588,7 @@ CREATE TABLE `TbWgWordGroup` (
   `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -594,7 +603,7 @@ CREATE TABLE `TbWkProducer` (
   `name` varchar(100) NOT NULL,
   `url` varchar(256) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -608,11 +617,14 @@ CREATE TABLE `TbWkWork` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `creatorId` int(11) NOT NULL,
   `name` varchar(100) NOT NULL,
+  `url` varchar(256) DEFAULT NULL,
+  `tagGrpId` int(11) NOT NULL,
   `length` decimal(9,2) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
   `typeId` int(11) NOT NULL,
   `producerId` int(11) DEFAULT NULL,
-  `viewDate` datetime NOT NULL,
+  `startViewDate` datetime DEFAULT NULL,
+  `endViewDate` datetime NOT NULL,
   `viewerId` int(11) NOT NULL,
   `locationId` int(11) NOT NULL,
   `remark` varchar(40) DEFAULT NULL,
@@ -624,12 +636,14 @@ CREATE TABLE `TbWkWork` (
   KEY `fk_locationId` (`locationId`),
   KEY `creatorId` (`creatorId`),
   KEY `viewerId` (`viewerId`),
+  KEY `tagGrpId` (`tagGrpId`),
   CONSTRAINT `TbWkWork_ibfk_1` FOREIGN KEY (`producerId`) REFERENCES `TbWkProducer` (`id`),
   CONSTRAINT `TbWkWork_ibfk_2` FOREIGN KEY (`typeId`) REFERENCES `TbWkWorkType` (`id`),
   CONSTRAINT `TbWkWork_ibfk_3` FOREIGN KEY (`locationId`) REFERENCES `TbLcNamed` (`id`),
   CONSTRAINT `TbWkWork_ibfk_5` FOREIGN KEY (`creatorId`) REFERENCES `TbIdGrp` (`id`),
-  CONSTRAINT `TbWkWork_ibfk_6` FOREIGN KEY (`viewerId`) REFERENCES `TbIdGrp` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
+  CONSTRAINT `TbWkWork_ibfk_6` FOREIGN KEY (`viewerId`) REFERENCES `TbIdGrp` (`id`),
+  CONSTRAINT `TbWkWork_ibfk_7` FOREIGN KEY (`tagGrpId`) REFERENCES `TbTgTagGrp` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -646,7 +660,7 @@ CREATE TABLE `TbWkWorkType` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`),
   KEY `name_2` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1 COMMENT='Type of a title: movie, book, abook, audio lecture';
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COMMENT='Type of a title: movie, book, abook, audio lecture';
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
