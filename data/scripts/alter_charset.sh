@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # parameters...
+USER='mark'
+PASS=''
+DB='myworld'
+CHARSET='utf8'
+COLLATION='utf8_unicode_ci'
 
-USER='mark';
-PASS='';
-DB="myworld";
-CHARSET="utf8";
-COLLATION="utf8_unicode_ci";
-
-QUERY="SELECT table_name FROM information_schema.TABLES WHERE table_schema = '$DB';";
+# here we go...
+QUERY="SELECT table_name FROM information_schema.TABLES WHERE table_schema = '$DB';"
 TABLES=$(mysql -u $USER --password=$PASS $DB --execute="$QUERY" | sed 's/|//g' | tail -n +2)
 for TABLE in $TABLES; do
 	echo "ALTER TABLE $TABLE ......"
