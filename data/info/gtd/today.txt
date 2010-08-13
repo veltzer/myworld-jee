@@ -1,31 +1,21 @@
 10:
-- write up a list of tools and text about them.
-	vmstat
-	iostat
-	mpstat
-	pidstat
-	sar, sadc(8), sa1(8), sa2(8), sadf(1), isag(1)
-	free, uptime
-	iotop, ionice
-	slabtop
-	jnettop
-	top
-	/proc, /sys filesystems
-	ps pstree pgrep
-	skill, pkill, kill, killall, killall5
-	nice, renice, snice
-	netstat, nc
-	atop, atopsar
-	fuser, pidof, lsof
-	crash
-	gdb
-	gcore
-- put my google calendar on my site (the interbit one).
+- write prelude number 1 and the three amit issues:
+	- rythms changes harmony.
+	- 2-5 harmonizations.
+	- fixes to "come rain or come shine".
 - fix the danny sanderson song (it is on the site then finish it!).
+
+blog:
+- put a calendar table in my database and show it.
+- show tags according to work.
+- add tags to works.
+
+- clean my inbox.
+- clean my intray.
+- win another 3 events in racing.
+
 - piano practice.
-- full p work.
-- clean some of my inbox.
-- clean some of my intray.
+- 2 p work.
 - night walk.
 
 - do one thing for the shay project (finish the import and show it in a statement).

@@ -21,8 +21,15 @@ my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
 
 my($debug)=0;
 my($prog)=1;
+# do you want to update all lengths ?
+my($do_all)=0;
 
-my($sql)="select * from TbWkWork where length is NULL or size is NULL";
+my($sql);
+if($do_all) {
+	$sql="select * from TbWkWork";
+} else {
+	$sql="select * from TbWkWork where length is NULL or size is NULL";
+}
 my($sth)=$dbh->prepare($sql);
 $sth->execute() or die "SQL Error: $DBI::errstr\n";
 my($rowhashref);
