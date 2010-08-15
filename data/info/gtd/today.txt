@@ -1,13 +1,14 @@
-14:
-night walk with lectures.
+15:
+photograph cat.
+win one more race event.
+pay electric bill.
+put all computer things in one place.
 one p issue.
-win one more race event.
-
-p work.
-win one more race event.
-
+do one thing for the shay project.
 lilypond:
 	- rythms changes harmony.
+
+lilypond:
 	- 2-5 harmonizations.
 	- fix the danny sanderson song (it is on the site then finish it!).
 
