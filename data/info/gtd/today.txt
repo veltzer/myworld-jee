@@ -1,9 +1,15 @@
-10:
-- write prelude number 1 and the three amit issues:
+14:
+night walk with lectures.
+one p issue.
+win one more race event.
+
+p work.
+win one more race event.
+
+lilypond:
 	- rythms changes harmony.
 	- 2-5 harmonizations.
-	- fixes to "come rain or come shine".
-- fix the danny sanderson song (it is on the site then finish it!).
+	- fix the danny sanderson song (it is on the site then finish it!).
 
 blog:
 - put a calendar table in my database and show it.
@@ -12,7 +18,6 @@ blog:
 
 - clean my inbox.
 - clean my intray.
-- win another 3 events in racing.
 
 - piano practice.
 - 2 p work.
