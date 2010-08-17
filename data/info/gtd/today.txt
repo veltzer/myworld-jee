@@ -1,5 +1,22 @@
-15:
-photograph cat.
+16:
+	- feed cat.
+	- do one thing for the shay project.
+	- wash dishes and order house.
+	- one thing for my blog - post something about something.
+
+17:
+	- continue ripping cds.
+	- post in blog.
+	- more work on the shay project.
+	- talk to interbit.
+	- learn about agile (see lectures).
+	- photograph cat (post photographs).
+
+18:
+	setup my room for studio recording.
+		(order it).
+	record myself (prelude number 1).
+
 win one more race event.
 pay electric bill.
 put all computer things in one place.
