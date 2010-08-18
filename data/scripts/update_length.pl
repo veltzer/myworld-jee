@@ -28,7 +28,7 @@ my($sql);
 if($do_all) {
 	$sql="select * from TbWkWork";
 } else {
-	$sql="select * from TbWkWork where length is NULL or size is NULL";
+	$sql="select * from TbWkWork where length is NULL or size is NULL or chapters is NULL";
 }
 my($sth)=$dbh->prepare($sql);
 $sth->execute() or die "SQL Error: $DBI::errstr\n";
@@ -76,6 +76,7 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 	# now update the database...
 	$dbh->do("update TbWkWork set length=? where id=?",undef,$stat_secs,$row_id);
 	$dbh->do("update TbWkWork set size=? where id=?",undef,$stat_size,$row_id);
+	$dbh->do("update TbWkWork set chapters=? where id=?",undef,scalar(@file_list),$row_id);
 }
 $dbh->commit();
 
