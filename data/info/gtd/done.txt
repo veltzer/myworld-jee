@@ -9458,3 +9458,38 @@ fixed parsing of lilypond in my lilypond project.
 saw movie and marked it.
 drums training.
 walk with lectures.
+added chapters support in myworld for works.
+fixed up some i_could_write_a_book midi production.
+fixed up "nature boy".
+added size to music statistics.
+yet another song published.
+piano practice.
+organized my music materials (printed ones).
+saw movie and marked it.
+drums training.
+p work.
+night walk with lectures.
+fixed up two more songs in lilypond.
+p work.
+lots of ripping.
+fed cat.
+took care of rissus for the house.
+bought present for Aviya.
+p work.
+saw movie and marked it.
+drums training.
+upgraded my machine.
+added youtube videos to my blog.
+saw movie and marked it.
+drums training.
+p work.
+saw movie and marked it.
+drums training.
+night walk with lectures.
+separated blobs into their own table in myworld.
+lilypond system now also makes pngs...
+drums training.
+added popup examples to my javascript examples...
+night walk with lectures.
+p work.
+piano training.

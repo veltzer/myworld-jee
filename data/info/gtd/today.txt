@@ -1,20 +1,22 @@
-17:
-	- win another race.
-	- feed cat.
-	- do one thing for the shay project.
-	- wash dishes and order house.
-	- one thing for my blog - post something about something.
-	- continue ripping cds.
-	- post in blog.
-	- more work on the shay project.
-	- talk to interbit.
-	- learn about agile (see lectures).
-	- photograph cat (post photographs).
+weekend:
+	my projects:
+	- use some kind of image album to show the images in the UI.
+	- add md5 to the blob table.
+	- add date imported to the blob table.
+	- add another check to lilypond.
 
-18:
-	setup my room for studio recording.
-		(order it).
-	record myself (prelude number 1).
+	- turn the music playing app to a database driven one.
+		do it in myworld as part of the shell.
+	- post in blog (anything).
+	- learn about agile (see lectures).
+
+	- talk to my dad.
+
+	- win another race.
+	- wash dishes and order house.
+	- continue ripping cds (ripp the full first column).
+	- do one thing for the shay project.
+	- take care of my inbox.
 
 win one more race event.
 pay electric bill.

@@ -189,7 +189,7 @@ DROP TABLE IF EXISTS `TbIdGrp`;
 CREATE TABLE `TbIdGrp` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -209,7 +209,7 @@ CREATE TABLE `TbIdGrpPerson` (
   CONSTRAINT `TbIdGrpPerson_ibfk_1` FOREIGN KEY (`personId`) REFERENCES `TbIdPerson` (`id`),
   CONSTRAINT `TbIdGrpPerson_ibfk_2` FOREIGN KEY (`personId`) REFERENCES `TbIdPerson` (`id`),
   CONSTRAINT `TbIdGrpPerson_ibfk_3` FOREIGN KEY (`groupId`) REFERENCES `TbIdGrp` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -232,7 +232,7 @@ CREATE TABLE `TbIdPerson` (
   KEY `firstname` (`firstname`),
   KEY `surname` (`surname`),
   KEY `othername` (`othername`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8 COMMENT='this is one person and can be used for everything...';
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8 COMMENT='this is one person and can be used for everything...';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -350,14 +350,6 @@ DROP TABLE IF EXISTS `TbMsLilypond`;
 CREATE TABLE `TbMsLilypond` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `uuid` char(36) NOT NULL,
-  `filebasename` varchar(100) NOT NULL,
-  `ly` mediumblob NOT NULL,
-  `pdf` mediumblob NOT NULL,
-  `ps` mediumblob NOT NULL,
-  `midi` mediumblob NOT NULL,
-  `wav` mediumblob,
-  `mp3` mediumblob,
-  `ogg` mediumblob,
   `title` varchar(100) DEFAULT NULL,
   `subtitle` varchar(100) DEFAULT NULL,
   `composer` varchar(100) DEFAULT NULL,
@@ -365,9 +357,12 @@ CREATE TABLE `TbMsLilypond` (
   `style` varchar(100) DEFAULT NULL,
   `piece` varchar(100) DEFAULT NULL,
   `poet` varchar(100) DEFAULT NULL,
+  `pages` int(11) NOT NULL,
+  `idyoutube` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`id`),
+  UNIQUE KEY `uuid_2` (`uuid`),
   KEY `uuid` (`uuid`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -379,14 +374,14 @@ DROP TABLE IF EXISTS `TbRsBlob`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `TbRsBlob` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) NOT NULL,
-  `description` varchar(200) DEFAULT NULL,
-  `remark` varchar(100) DEFAULT NULL,
-  `added` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  `data` blob,
+  `name` varchar(100) NOT NULL,
+  `slug` varchar(100) NOT NULL,
+  `mime` varchar(50) NOT NULL,
+  `data` mediumblob NOT NULL,
   PRIMARY KEY (`id`),
+  UNIQUE KEY `slug` (`slug`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=113 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -621,15 +616,16 @@ CREATE TABLE `TbWkWork` (
   `tagGrpId` int(11) NOT NULL,
   `length` decimal(9,2) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
+  `chapters` int(11) DEFAULT NULL,
   `typeId` int(11) NOT NULL,
   `producerId` int(11) DEFAULT NULL,
   `startViewDate` datetime DEFAULT NULL,
-  `endViewDate` datetime NOT NULL,
+  `endViewDate` datetime DEFAULT NULL,
   `viewerId` int(11) NOT NULL,
   `locationId` int(11) NOT NULL,
   `remark` varchar(40) DEFAULT NULL,
-  `rating` int(11) NOT NULL,
-  `review` varchar(256) NOT NULL,
+  `rating` int(11) DEFAULT NULL,
+  `review` varchar(256) DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_producerId` (`producerId`),
   KEY `fk_typeId` (`typeId`),
@@ -643,7 +639,7 @@ CREATE TABLE `TbWkWork` (
   CONSTRAINT `TbWkWork_ibfk_5` FOREIGN KEY (`creatorId`) REFERENCES `TbIdGrp` (`id`),
   CONSTRAINT `TbWkWork_ibfk_6` FOREIGN KEY (`viewerId`) REFERENCES `TbIdGrp` (`id`),
   CONSTRAINT `TbWkWork_ibfk_7` FOREIGN KEY (`tagGrpId`) REFERENCES `TbTgTagGrp` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
