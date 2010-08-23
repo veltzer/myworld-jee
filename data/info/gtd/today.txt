@@ -1,19 +1,30 @@
-weekend:
+23:
+	add TED videos to works
+		do ted embedding better.
+		import them in.
+		show them (with inline video).
+		check that old length calculation still works.
+		how about length calculations for the TED videos ?
+	see another movie.
+	wash dishes and order house (hear lectures).
+
 	my projects:
 	- use some kind of image album to show the images in the UI.
+	- add I'll close my eyes to the published songs.
+
+	blob handling:
 	- add md5 to the blob table.
 	- add date imported to the blob table.
-	- add another check to lilypond.
+	- add absolute path to the file name where this blob was imported from.
+	- do a general utility that checks for new content in the file names and
+		imports them.
 
 	- turn the music playing app to a database driven one.
 		do it in myworld as part of the shell.
 	- post in blog (anything).
 	- learn about agile (see lectures).
 
-	- talk to my dad.
-
 	- win another race.
-	- wash dishes and order house.
 	- continue ripping cds (ripp the full first column).
 	- do one thing for the shay project.
 	- take care of my inbox.
