@@ -1,5 +1,17 @@
-23:
+24:
+	- do a dialog to add films.
+
+	- add a dialog to put new data in my events table
+		(private ofcourse).
+	- add all my teaching appointments from now on using this dialog.
+	- show my own table at my calendar.
+
+	- pass money to book.
+	- continue ripping cds.
+
 	add TED videos to works
+		embed a ted video in my blog at wordpress and see how they are doing
+			it.
 		do ted embedding better.
 		import them in.
 		show them (with inline video).

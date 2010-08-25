@@ -9510,3 +9510,23 @@ saw movie and marked it.
 drums training.
 saw educational movie and marked it.
 added blog to wordpress to test things.
+added calendar to my blog.
+fixed some issues in my blog.
+added a client to my list of clients.
+fixed up my google calendar (it is now on display).
+added support for my own events in calendar.
+night walk with lectures.
+saw movie and marked it.
+drums training.
+p work.
+p work.
+piano workout.
+took care of some of my inmail.
+won another race.
+some p work.
+handled my old car issues.
+more cd ripping.
+handled my old car issues.
+saw movie and marked it.
+drums training.
+built dialog for inserting new events.
