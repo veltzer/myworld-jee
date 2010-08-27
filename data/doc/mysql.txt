@@ -18,6 +18,10 @@
 - updating fields from other fields:
 	update TbAbItems set producer="TTC" where type="TTC";
 
+- changing the AUTO_INCREMENT value:
+	ALTER TABLE TbAbItems AUTO_INCREMENT = 1;
+	* note that if you set it to 1 it will disappear from "show create table" (default).
+
 - inserting data only to specific columns:
 	insert into TbAbProducers (name,url) values('TTC','http://www.teach12.com/');
 	You may wish to set the automatic id which is given by:
@@ -34,6 +38,9 @@
 
 - dropping a foreign key:
 	alter table TbAbItems drop foreign key TbAbItems_ibfk_2;
+
+- showing all foreign keys for a table:
+	show keys from [table]
 
 - seeing all constraints of a table:
 	SELECT * FROM information_schema.key_column_usage  WHERE table_schema = 'myworld' AND table_name = 'TbAbItems'\G
