@@ -1,4 +1,14 @@
-24:
+28:
+	- do a post on something.
+	- win another race.
+	- do a widget that shows the current song that I am listening to.
+	- see a movie.
+	- piano practice and write at least one of amits things.
+	- make the damn dialog work.
+
+	- add images to selection of companies.
+	- night walk with lectures.
+
 	- do a dialog to add films.
 
 	- add a dialog to put new data in my events table
