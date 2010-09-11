@@ -9551,3 +9551,88 @@ fixed a glitch in "come_rain_or_come_shine.ly".
 saw movie and marked it.
 drums training.
 new post on my blog.
+did readme for my friends about how to download from my site.
+night walk with lectures.
+some p work.
+supported david with downloading of my stuff.
+a little ordering of the house.
+mucho ripping of my cd collection.
+upgraded my laptop.
+worked for shay on optimus.
+drums training.
+worked for rafael and sent hours report.
+upgraded my machine.
+piano practice.
+picked up car from test.
+added a sendfile demo.
+upgraded my machine.
+worked on some of my demos.
+saw movie and marked it.
+drums training.
+integrated material from interbit.
+some p work.
+did some work on the centrigo project.
+taught for interbit and sent hours report.
+saw movie and marked it.
+worked for rafael and sent hours report.
+saw movie and marked it.
+heard audio book and marked it.
+some p work.
+saw movie and marked it.
+drums training.
+saw movie and marked it.
+some p work.
+some piano training.
+saw movie and marked it.
+drums training.
+ordered my cds back after ripping.
+some more p work.
+saw movie and marked it.
+drums training.
+cut nails.
+do a post on something the critical checks pattern in embedded systems.
+piano training.
+saw movie and marked it.
+checked my last blog entry and improved it.
+did test for my brothers car.
+scheduled meeting at the open uni.
+mark down meeting in the open Uni.
+upgraded my laptop.
+upgraded my main machine.
+taught for interbit and sent hours report.
+configured my pub key setup better.
+blogged about ssh pubkey setup.
+continued ripping my cd stacks.
+checked that remote connection really works (from shay).
+turned off sounds in my laptop.
+wrote the problem issues with shay.
+attended the open uni meeting.
+fixed up some issues with my blog.
+improved my kernel dma allocation demo.
+answered request from Rafael.
+p work.
+win one more race.
+saw movie and marked it.
+drums training.
+fixed my laptop grub issues.
+added auditing demo to my demos.
+saw movie and marked it.
+drums training.
+some p work.
+answer my brothers question and write a demo to show it.
+did the kernel sys call hijacking demo.
+some p work.
+improved my jQuery infra a lot.
+saw movie and marked it.
+drums training.
+piano training.
+piano training.
+worked on the movie input some more.
+saw movie and marked it.
+drums training.
+protected my home folder.
+took care of blog redirection better.
+wrote some new post ideas.
+worked on the NewMovie dialog and improved it.
+saw movie and marked it.
+drums training.

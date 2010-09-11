@@ -1,6 +1,45 @@
-28:
-	- do a post on something.
+11.9:
+	- finish the page to mark movies and use IT!.
+	- finish the current blog post.
+
+	- mark the articles that I read (do a page for that).
+	- continue hearing the complexity series.
+	- full p work.
+
+	- put the new complexity course on my media player.
+	- night walk with lectures.
+	- do a kernel_lock demo and an unlocked_ioctl demo.
+	- integrate python demos into my demos.
+
+	- see one more movie.
+	- publish one more song on my blog.
+	- ripp everything that is on my desk.
+	- handle my intray emails.
+	- handle my real intray (at least several items).
+	- mark down starting to read the machiavelly and add feature to show what I'm currently
+	reading.
+	- sync up on p.
+	- win one more race.
+
+
+8.9:
+	- deposit davids check in the bank.
+	- give shay davids checks.
+
+evening:
+	- decide what I want to learn in the open Uni.
+	- record the site of the painting guy.
+	- catch up on pornstar book.
 	- win another race.
+
+	- finish ripping whatever is on my desk.
+	- win another event in racing.
+	- do something for my projects.
+	- do the sys call overloading thing.
+	- do at least one night walk with lectures.
+	- erase lectures from my pod and put new ones.
+	- write the lionel ritchie song "hello".
+
 	- do a widget that shows the current song that I am listening to.
 	- see a movie.
 	- piano practice and write at least one of amits things.
