@@ -9636,3 +9636,34 @@ wrote some new post ideas.
 worked on the NewMovie dialog and improved it.
 saw movie and marked it.
 drums training.
+piano training.
+saw movie and marked it.
+drums training.
+p work.
+night walk with lectures.
+organized my bittorrent material.
+integrate materials for python and put python exercises in my demos.
+integrate advanced sys admin materials.
+checked that swig and glade are on the laptop.
+synced material on the laptop.
+taught for interbit and sent hours report.
+synced software on the laptop.
+did a python embedding example.
+sync the laptop with the demos.
+configured chromium and firefox to download stuff to ~/downloads
+backed up my laptop package selection.
+fixed up my backing up scripts for package selection.
+synced package selection across my machines (cantor <-> fermat).
+taught for interbit and sent hours report.
+did dd meeting.
+ordered some inbox email.
+worked for rafael and sent hours report.
+taught for interbit and sent hours report.
+saw movie and marked it.
+taught for interbit and sent hours report.
+took care of my email inbox.
+lesson with amit.
+finished my movie submit page (at least it's working).
+did more pages for my riddles notebooks.
+imdb data is showing on my blog.
+not showing movies in my works plugin.

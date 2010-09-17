@@ -1,6 +1,35 @@
-11.9:
+17.9:
+	check that getting lengths works.
+
+	win another race.
+	see some kind of lecture.
+	solve my brothers riddle and write the solution.
+	write bye bye blackbird and email amit about sending me the song.
+	login to openu and see all is well.
+
+	finish the current audio course, start another, download everything from
+		the cowon and loadup new stuff.
+
+	show movies in their own page (only the latest X films - say 20).
+
+	see two movie and marked them using MY marker.
+
+	investigate python memory allocations and show whether they are as C or not.
+
+	solve all p issues.
+	put a database configuration option in optimus.
+	handle my in_tray emails.
+	handle one thing in my file in_tray.
+
+	clean the house with lectures.
+	import shays data and put them in a database.
+		add a configuration dialog for mysql parameters.
+	finish the current blog post.
+	prepare for python tommorow.
+
+	more p work.
+
 	- finish the page to mark movies and use IT!.
-	- finish the current blog post.
 
 	- mark the articles that I read (do a page for that).
 	- continue hearing the complexity series.
