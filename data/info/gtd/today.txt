@@ -1,22 +1,17 @@
 17.9:
-	check that getting lengths works.
-
+	cut nails.
+	finish all p.
+	do a demo for using hash tables in gnuc (I will need it tommorow).
 	win another race.
-	see some kind of lecture.
+	create a git tree for the slavik project and sync it to the laptop.
+
+	import many of the movies I saw into the database.
 	solve my brothers riddle and write the solution.
 	write bye bye blackbird and email amit about sending me the song.
 	login to openu and see all is well.
 
-	finish the current audio course, start another, download everything from
-		the cowon and loadup new stuff.
-
-	show movies in their own page (only the latest X films - say 20).
-
-	see two movie and marked them using MY marker.
-
 	investigate python memory allocations and show whether they are as C or not.
 
-	solve all p issues.
 	put a database configuration option in optimus.
 	handle my in_tray emails.
 	handle one thing in my file in_tray.

@@ -9667,3 +9667,24 @@ finished my movie submit page (at least it's working).
 did more pages for my riddles notebooks.
 imdb data is showing on my blog.
 not showing movies in my works plugin.
+fixed update_length.pl script to work after movie updates.
+got movies page on my site.
+downloaded stuff from cowon and loaded it up with new stuff.
+night walk with lectures.
+won one more race.
+did a python demo for the NDS folk.
+fixed it so I WILL get root mail to my machine.
+cleared cache for firefox.
+disabled delivery of weird addresses to my machine.
+fixed my sites favicon issue which was not perfectly resolved.
+installed favicon as well to make sure everything works well.
+installed dvd for my parents.
+did demo of python multi-threaded web server
+finished audio lectures and marked them - removed the from the COWON.
+took care of my cowon inbox.
+wrote ideas about the direct democracy book.
+integrated amits lessons.
+secured my dropbox password.
+cleaned out my dropbox folder.
+saw movie and marked it (with new movie system).
+drums training.
