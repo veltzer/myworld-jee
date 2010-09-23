@@ -1,6 +1,6 @@
 #!/bin/sh
 #x=`date +%y%m%d%H%M%S`
-DIR=data
+DIR=~/Dropbox/db
 OPTS="--complete-insert --skip-dump-date"
 mysqldump $OPTS myworld > $DIR/data_and_schema.sql
 mysqldump $OPTS myworld --no-create-info > $DIR/data_only.sql
