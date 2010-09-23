@@ -1,6 +1,32 @@
-17.9:
-	cut nails.
-	finish all p.
+22.9:
+	finish p (kayden kross).
+
+	write a script that allows me to separate stuff to a new table.
+
+	separate hearings from works.
+		(this will enable to import all lectures automatically).
+
+	import all lectures in my audio archive into works.
+		How do I decide if they are TTC ? I Don't know.
+		How do I decide if they are audio books ? I Don't know.
+
+	do a dialog for entering a lecture.
+		use that to enter the lectures that I am now hearing (the Russian
+			Revolution).
+	another go at RDP.
+	integrate everything from my laptop.
+23.9:
+	do examples of ejbs for the ejb course.
+	get the address of mind in Romania.
+	check that I have all that info on my laptop.
+
+21.9:
+	morning:
+		deposit check.
+		buy food for cat.
+		pull out money from bank.
+
+	finish seeing movie and mark it.
 	do a demo for using hash tables in gnuc (I will need it tommorow).
 	win another race.
 	create a git tree for the slavik project and sync it to the laptop.
