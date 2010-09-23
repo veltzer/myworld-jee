@@ -1,4 +1,6 @@
 22.9:
+	show reviews again in pages.
+
 	write a script that allows me to separate stuff to a new table.
 
 	separate these fields from the TbWkWork table into TbWkWorkView
@@ -7,10 +9,6 @@
 		viewwerId
 		locationId
 		deviceId
-	separate these fields from the TbWkWork table into TbWkWorkReview:
-		rating
-		review
-		reviewDate
 
 	import all lectures in my audio archive into works.
 		How do I decide if they are TTC ? I Don't know.
