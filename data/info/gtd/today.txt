@@ -1,12 +1,15 @@
 23.9:
-	bring back stuff on my blog.
-
+	finish jessica jaymes stuff.
+	bring back stuff on my using regular queries (no oo system yet) blog.
 	one song on my page (My Romance ?!?)
+	mail amit about the lesson.
+	upcoming course:
+		find the material for the upcoming course.
+		do examples of ejbs for the ejb course.
 
 	another go at RDP.
 	integrate everything from my laptop.
 
-	do examples of ejbs for the ejb course.
 	get the address of mind in Romania.
 	check that I have all that info on my laptop.
 
