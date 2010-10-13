@@ -1,26 +1,59 @@
-23.9:
-	finish jessica jaymes stuff.
-	bring back stuff on my using regular queries (no oo system yet) blog.
-	one song on my page (My Romance ?!?)
-	mail amit about the lesson.
-	upcoming course:
-		find the material for the upcoming course.
-		do examples of ejbs for the ejb course.
+today:
+	do example of /dev/zero with full optimization (or several options) for nulling the
+		buffer.
+	do example of pipe in the kernel.
+	do example of catching mouse interrupts in the kernel.
+	find good example of PCI driver to examine.
 
-	another go at RDP.
-	integrate everything from my laptop.
+	upgrade my main machine.
+	start playing another game on the PS3.
+	write down one song (with or without you by U2?!?).
+	night walk with lectures.
 
-	get the address of mind in Romania.
-	check that I have all that info on my laptop.
+weekend:
 
-21.9:
-	morning:
-		deposit check.
-		buy food for cat.
-		pull out money from bank.
+	write a page to mark lectures.
+	mark all data stuff in my blog (including courses which I finished).
+	go over all inbox email.
+	go over all my real inbox.
+	do p work (honey school naming is enough).
+	pay up some bills.
+	write bye bye blackbird and publish it.
+
+data stuff:
+	mark my trip aboad.
+	upload photos from my camera (agi and Iasi).
+	mark the two lectures (russia, complexity) that I saw.
+	mark terracota, HTML5, android, jpa, c++ programming in my courses.
+
+monday:
+	get money from bank.
+	work for guy rinat.
+
+	prepare a kernel exercise.
+
+	do some p work.
+
+	get to JPA application which does a web ui to see all of my works.
+
+
+
+	bring back stuff on my blog using regular queries (authors and so) (no oo system yet) blog.
+
+	find how to download movies from digitalplayground.com
+	go over all real inbox.
+	ripp all remaining cds.
+	do some p work.
+
+	write down bye bye blackbird and publish it.
+	email amit about sending me the song again.
+
+	handle money stuff.
+monday:
+	handle insurance stuff (I stopped paying).
+=======================================================================
 
 	finish seeing movie and mark it.
-	do a demo for using hash tables in gnuc (I will need it tommorow).
 	win another race.
 	create a git tree for the slavik project and sync it to the laptop.
 
