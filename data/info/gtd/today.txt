@@ -1,24 +1,26 @@
-today:
-	do example of /dev/zero with full optimization (or several options) for nulling the
-		buffer.
-	do example of pipe in the kernel.
-	do example of catching mouse interrupts in the kernel.
-	find good example of PCI driver to examine.
-
-	upgrade my main machine.
-	start playing another game on the PS3.
-	write down one song (with or without you by U2?!?).
-	night walk with lectures.
-
 weekend:
+	kernel stuff:
+		do example of /dev/zero with full optimization (or several options) for nulling the
+			buffer.
+		do example of pipe in the kernel.
+		do example of catching mouse interrupts in the kernel.
+		fix the example of sbd for the new kernel and commit it.
+		commit an example of a PCI driver (char driver).
 
-	write a page to mark lectures.
-	mark all data stuff in my blog (including courses which I finished).
+	prepare for openu.
+	write a blog post.
+	write a web application page to mark lectures.
+	do the data stuff below.
+	meeting with doron.
+	upgrade my laptop.
+	write down one song (with or without you by U2?!?).
+	start playing another game on the PS3.
+	night walk with lectures.
+	write bye bye blackbird and publish it.
+	pay shoshi and electricity bill (borrow money if need be).
 	go over all inbox email.
 	go over all my real inbox.
 	do p work (honey school naming is enough).
-	pay up some bills.
-	write bye bye blackbird and publish it.
 
 data stuff:
 	mark my trip aboad.
