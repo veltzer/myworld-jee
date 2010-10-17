@@ -1,10 +1,10 @@
 weekend:
+
 	kernel stuff:
 		do example of /dev/zero with full optimization (or several options) for nulling the
 			buffer.
 		do example of pipe in the kernel.
 		do example of catching mouse interrupts in the kernel.
-		fix the example of sbd for the new kernel and commit it.
 		commit an example of a PCI driver (char driver).
 
 	prepare for openu.
@@ -12,7 +12,6 @@ weekend:
 	write a web application page to mark lectures.
 	do the data stuff below.
 	meeting with doron.
-	upgrade my laptop.
 	write down one song (with or without you by U2?!?).
 	start playing another game on the PS3.
 	night walk with lectures.
