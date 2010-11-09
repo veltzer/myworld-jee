@@ -1,24 +1,26 @@
-weekend:
-
-	kernel stuff:
+7.11:
+	do some p work.
+	finish the PS3 game.
+	See the lecture in the philosophy course.
+	find out how to remove the stuff from my camera and document it.
+	kernel examples to write:
+		write the gilad recommendatios for trap handling.
+			(or at least write a TODO on writing it).
 		do example of /dev/zero with full optimization (or several options) for nulling the
 			buffer.
 		do example of pipe in the kernel.
 		do example of catching mouse interrupts in the kernel.
 		commit an example of a PCI driver (char driver).
+	go over all inbox email.
+	go over all my real inbox.
 
-	prepare for openu.
 	write a blog post.
 	write a web application page to mark lectures.
 	do the data stuff below.
-	meeting with doron.
 	write down one song (with or without you by U2?!?).
 	start playing another game on the PS3.
 	night walk with lectures.
 	write bye bye blackbird and publish it.
-	pay shoshi and electricity bill (borrow money if need be).
-	go over all inbox email.
-	go over all my real inbox.
 	do p work (honey school naming is enough).
 
 data stuff:
@@ -26,6 +28,7 @@ data stuff:
 	upload photos from my camera (agi and Iasi).
 	mark the two lectures (russia, complexity) that I saw.
 	mark terracota, HTML5, android, jpa, c++ programming in my courses.
+	mark websense, Mercy corps to the list of companies that I taught.
 
 monday:
 	get money from bank.

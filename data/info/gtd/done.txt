@@ -9822,3 +9822,71 @@ prepared for the openu course.
 made the sbd driver for the kernel work for new kernels and comitted it.
 passed money to translator.
 lesson with openu.
+drums training.
+worked for sentrigo and sent hours report.
+taught for interbit and sent hours report.
+took care of inbox mail.
+upgraded my machine.
+piano practice.
+did some examples for the c++ debug course.
+wrote a lot of examples for the debugging course.
+worked for interbit and sent hours report.
+prepared more examples for the debugging course.
+taught for interbit and sent hours report.
+did meeting with the insurance guy.
+saw movie and marked it.
+helped galit out (she was sick).
+piano training.
+taught for interbit and sent hours report.
+vaccinated the cat.
+taught for interbit and sent hours report.
+finished computer game at new level and marked it.
+upgraded my machine.
+improved one of my debug examples.
+did better support for cleaning in my demos.
+piano practice.
+taught for interbit and sent hours report.
+lots of p work.
+wrote some more example for the debugging course.
+taught for interbit and sent hours report.
+piano training.
+worked for rafael and sent hours report.
+visited my brother.
+lesson with amit.
+saw movie and marked it.
+drums training.
+saw movie and marked it.
+drums training.
+night walk with lectures.
+taught for interbit and sent hours report.
+taught for interbit and sent hours report.
+piano practice.
+worked for rafael and sent hours report.
+taught for interbit and sent hours report.
+taught for interbit and sent hours report.
+improved my python examples.
+improved my eventfd examples.
+saw movie and marked it.
+drums training.
+more playing of the sony PS3 game.
+loaded cowon with new lectures.
+night walk with lectures.
+saw movie and marked it.
+drums training.
+do something for my own projects (print names of people involved in the works).
+saw movie and marked it.
+drums training.
+saw movie and marked it.
+drums training.
+bought food.
+saw movie and marked it.
+drums training.
+upgraded my machine.
+configured my mysql better (with my own config snipplet).
+added organization support in my weblog.
+payed bills (water, electricity, phone).
+saw movie and marked it.
+worked for rafael and sent hours report.
+taught for interbit and sent hours report.
+saw movie and marked it.
+drums training.
