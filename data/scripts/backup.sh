@@ -6,4 +6,4 @@ OPTS="--complete-insert --skip-dump-date"
 mysqldump $OPTS myworld > $DIR/data_and_schema.sql
 mysqldump $OPTS myworld --no-create-info > $DIR/data_only.sql
 mysqldump $OPTS myworld --no-data > $DIR/schema_only.sql
-./stats.sh > $DIR/stats.txt
+./scripts/stats.sh > $DIR/stats.txt

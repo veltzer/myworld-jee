@@ -1,6 +1,32 @@
+17.11:
+	pay the fine.
+	do dojo slides for writing widgets with examples.
+	do dialog for input of a view of a work.
+	do dialog for review of a work.
+
+	solve the doron riddle and write it down.
+	write down "dust in the wind" in lilypond.
+	do one thing for the apartment (write down the letter they want).
+	read one book (mill).
+	see the philosophy lecture.
+
+weekend:
+	do stuff for my blog:
+		- new person dialog.
+			(which I can use to add new persons and which tells
+			me if the person is there or not).
+		- new lecture dialog.
+			(which also lets me add more persons with roles).
+		- heard lecture dialog
+			(which lets me select a lecture, date and submit a hear).
+		- new lecture review
+			(which lets me select a lecture, date and submit a review).
+		With that stuff do 4 things for the dojo course.
+	finish the PS3 game.
+	write a blog post.
+
 7.11:
 	do some p work.
-	finish the PS3 game.
 	See the lecture in the philosophy course.
 	find out how to remove the stuff from my camera and document it.
 	kernel examples to write:
@@ -14,7 +40,6 @@
 	go over all inbox email.
 	go over all my real inbox.
 
-	write a blog post.
 	write a web application page to mark lectures.
 	do the data stuff below.
 	write down one song (with or without you by U2?!?).
@@ -22,13 +47,6 @@
 	night walk with lectures.
 	write bye bye blackbird and publish it.
 	do p work (honey school naming is enough).
-
-data stuff:
-	mark my trip aboad.
-	upload photos from my camera (agi and Iasi).
-	mark the two lectures (russia, complexity) that I saw.
-	mark terracota, HTML5, android, jpa, c++ programming in my courses.
-	mark websense, Mercy corps to the list of companies that I taught.
 
 monday:
 	get money from bank.
