@@ -9924,3 +9924,38 @@ walk with lectures.
 got html5 material to integrate.
 some new dialogs are in place.
 put audio courses heard into my database.
+piano practice.
+did some examples for the dojo course.
+saw a movie and marked it.
+drums training.
+worked for interbit and sent hours report.
+heard audio course and marked it.
+saw movie and marked it.
+drums training.
+added many externals per work in my database.
+saw movie and marked it.
+drums training.
+added external for persons.
+saw movie and marked it.
+drums training.
+upgraded my machine.
+added more externals.
+found the chords of "memory" of cats. Need to write them down.
+saw movie and marked it.
+drums training.
+saw movie and marked it.
+drums training.
+did work for rafael and sent hours report.
+did work for rafael and sent hours report.
+saw movie and marked it.
+drums training.
+added a few externals to my list of externals.
+did lots of stuff for my data.
+saw movie and marked it.
+took care of transactions in myworld.
+new dialog for inputing work+external+review.
+all web articles are now in the database and showing.
+reset my plaxo password to a safe password. registered it in my passwords file.
+reset my msn password to a know password. registered it in my passwords file.
+fixed plaxo support on myworld.
+did p statistics (there is some advance).

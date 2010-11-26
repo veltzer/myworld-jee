@@ -1,29 +1,22 @@
-17.11:
-	pay the fine.
-	do dojo slides for writing widgets with examples.
-	do dialog for input of a view of a work.
-	do dialog for review of a work.
+weekend:
+	register my msn account with my weblog.
+	see the end of the movie.
+	commit php exercises from my laptop.
+	do something for my projects:
+		import static reading articles.
+		fix hebrew display.
 
+	finish the phil book.
+	write the sheet of cats and publicize.
 	solve the doron riddle and write it down.
+	pay the fine.
+
+	finish the PS3 game.
+	write a blog post (release the draft that I have).
 	write down "dust in the wind" in lilypond.
 	do one thing for the apartment (write down the letter they want).
 	read one book (mill).
 	see the philosophy lecture.
-
-weekend:
-	do stuff for my blog:
-		- new person dialog.
-			(which I can use to add new persons and which tells
-			me if the person is there or not).
-		- new lecture dialog.
-			(which also lets me add more persons with roles).
-		- heard lecture dialog
-			(which lets me select a lecture, date and submit a hear).
-		- new lecture review
-			(which lets me select a lecture, date and submit a review).
-		With that stuff do 4 things for the dojo course.
-	finish the PS3 game.
-	write a blog post.
 
 7.11:
 	do some p work.
