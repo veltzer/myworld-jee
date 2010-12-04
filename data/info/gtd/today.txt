@@ -1,10 +1,14 @@
 weekend:
+	do my own calendar!!!
+	make the dialog for events work.
+	show those events in the calendar.
+	also show the old google calendar until all events pass to the new one.
+
 	register my msn account with my weblog.
 	see the end of the movie.
 	commit php exercises from my laptop.
 	do something for my projects:
 		import static reading articles.
-		fix hebrew display.
 
 	finish the phil book.
 	write the sheet of cats and publicize.
