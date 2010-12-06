@@ -1,3 +1,14 @@
+after china:
+	- finish memory.ly.
+	- do the hats riddle.
+
+prepare for abroad:
+
+	at airport:
+	- buy batteries.
+	- exchange money.
+
+
 weekend:
 	do my own calendar!!!
 	make the dialog for events work.
