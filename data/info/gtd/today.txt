@@ -1,10 +1,14 @@
-friday:
+weekend:
+	- finish memory.ly.
+	- do the hats riddle.
+	- do one thing for my projects:
+		- import one of my private files whole.
+		- do the time widget and use it for my own appointments.
+
+saturday:
 	buy new phone, matrass, linen for the bed and good blanket (pooch).
 
 after china:
-	- finish memory.ly.
-	- do the hats riddle.
-
 weekend:
 	do my own calendar!!!
 	make the dialog for events work.
