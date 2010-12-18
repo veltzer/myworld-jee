@@ -1,4 +1,5 @@
 weekend:
+	- finish imdb registration and publicize my imdb id.
 	- finish memory.ly.
 	- do the hats riddle.
 	- do one thing for my projects:

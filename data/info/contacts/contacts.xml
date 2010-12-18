@@ -1128,7 +1128,7 @@ KFC: Kentucky Fried Chicken
 					/>
 				<id
 					type_ref="type.id_creditcard"
-					value="5326101300421882/08/11/529"
+					value="5326101303036554/08/14/145"
 					remark="this is the mastercard"
 					/>
 				<id
@@ -1140,7 +1140,7 @@ KFC: Kentucky Fried Chicken
 			<codes>
 				<code
 					type_ref="type.code_bankcard"
-					value="1202"
+					value="3804"
 					remark="this is my mastercard card from bank hapoalim"
 					/>
 				<code
