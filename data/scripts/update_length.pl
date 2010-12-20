@@ -19,6 +19,7 @@ use DBI;
 # for video:
 # same as audio but determines length via the Video::Info module.
 # for movies:
+# using IMDB::Film to get the films duration.
 
 # hints:
 # use this query to see all types of works in my database:
