@@ -24,6 +24,7 @@ use DBI;
 # hints:
 # use this query to see all types of works in my database:
 # select distinct(TbWkWork.typeId) from TbWkWork;
+# it also check that the name of the work is identical to the name from Imdb.
 
 my($dbh)=DBI->connect('dbi:mysql:myworld','','',{
 	RaiseError => 1,
@@ -46,6 +47,8 @@ my($sql);
 #$sql='select * from TbWkWork';
 # selecting only works which are audio (selecting all as above will NOT work...)
 $sql='select TbWkWork.id,TbWkWork.name,TbWkWork.typeId from TbWkWork,TbWkWorkType where TbWkWork.typeId=TbWkWorkType.id and TbWkWorkType.name in (\'audio book\',\'audio course\',\'audio lecture\',\'audio show\',\'video course\',\'video movie\')';
+# this is just for movies
+#$sql='select TbWkWork.id,TbWkWork.name,TbWkWork.typeId from TbWkWork,TbWkWorkType where TbWkWork.typeId=TbWkWorkType.id and TbWkWorkType.name in (\'video movie\')';
 if($do_all) {
 } else {
 	#$sql.=' and ( TbWkWork.length is NULL or TbWkWork.size is NULL or TbWkWork.chapters is NULL )';
@@ -152,6 +155,10 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 		if($imdbObj->status) {
 			my($duration);
 			$duration=$imdbObj->duration();
+			my($title)=$imdbObj->title();
+			if($title ne $f_name) {
+				die("title is $title, and name is $f_name");
+			}
 			if(!defined($duration)) {
 				print 'movie has no duration'."\n";
 				next;
