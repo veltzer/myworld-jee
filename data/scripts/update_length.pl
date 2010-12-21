@@ -52,7 +52,8 @@ $sql='select TbWkWork.id,TbWkWork.name,TbWkWork.typeId from TbWkWork,TbWkWorkTyp
 if($do_all) {
 } else {
 	#$sql.=' and ( TbWkWork.length is NULL or TbWkWork.size is NULL or TbWkWork.chapters is NULL )';
-	$sql.=' and ( TbWkWork.length is NULL )';
+	#$sql.=' and ( TbWkWork.length is NULL )';
+	$sql.=' and ( updated is false )';
 }
 if($debug) {
 	print 'sql is ['.$sql.']'."\n";
@@ -141,9 +142,7 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 			print 'found size='.$stat_size.', secs='.$stat_secs.',chapters='.$chapters."\n";
 		}
 		# now update the database...
-		$dbh->do('update TbWkWork set length=? where id=?',undef,$stat_secs,$f_id);
-		$dbh->do('update TbWkWork set size=? where id=?',undef,$stat_size,$f_id);
-		$dbh->do('update TbWkWork set chapters=? where id=?',undef,scalar(@file_list),$f_id);
+		$dbh->do('update TbWkWork set length=?,size=?,chapters=?,updated=? where id=?',undef,$stat_secs,$stat_size,scalar(@file_list),1,$f_id);
 		$counter++;
 	}
 	if($type eq 'movie') {
@@ -160,7 +159,8 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 				die("title is $title, and name is $f_name");
 			}
 			if(!defined($duration)) {
-				print 'movie has no duration'."\n";
+				print 'movie has no duration, setting updated anyway...'."\n";
+				$dbh->do('update TbWkWork set updated=? where id=?',undef,1,$f_id);
 				next;
 			}
 			if($duration!~/^(\w+\: )?\d+ min/) {
@@ -171,7 +171,7 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 			if($prog) {
 				print 'found secs='.$stat_secs."\n";
 			}
-			$dbh->do('update TbWkWork set length=? where id=?',undef,$stat_secs,$f_id);
+			$dbh->do('update TbWkWork set length=?,updated=? where id=?',undef,$stat_secs,1,$f_id);
 		} else {
 			print "Something wrong: ".$imdbObj->error;
 		}
