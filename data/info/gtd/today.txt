@@ -1,11 +1,19 @@
 weekend:
+	- add images to ttc and show ttc images in data.
+	- add images to people and show people images in data.
+	- read another article.
+	- show a histogram of my piano jazz trainings on my music page.
+
+	- finish the problem with the jazz tunes macros.
+	- see a movie.
+	- see 4 more lectures in the philosophy course.
+	- read the phil book.
 	- finish memory.ly.
 	- do the hats riddle.
 	- do one thing for my projects:
 		- import one of my private files whole.
 		- do the time widget and use it for my own appointments.
 	- buy new phone, matrass, linen for the bed and good blanket (pooch).
-	- piano practice.
 
 weekend:
 	do my own calendar!!!
