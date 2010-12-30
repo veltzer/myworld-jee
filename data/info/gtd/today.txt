@@ -1,4 +1,8 @@
-weekend:
+monday:
+	- finish the slihot song.
+	- finish dorons riddle.
+	- review the new shlomi material.
+
 	- add images to ttc and show ttc images in data.
 	- add images to people and show people images in data.
 	- read another article.

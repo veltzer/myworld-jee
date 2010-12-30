@@ -178,7 +178,6 @@ while($rowhashref=$sth->fetchrow_hashref()) {
 	}
 }
 $dbh->commit();
-
 $dbh->disconnect();
 
 if($stats) {

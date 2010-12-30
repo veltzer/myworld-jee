@@ -1,0 +1,74 @@
+The Movie project
+=================
+A database for movies created and seen with the date on which
+they were seen. Actors, industry personel etc all within.
+
+features:
+0. full internal people database.
+1. reviews by people.
+2. views by people.
+3. ratings.
+4. stars info including:
+	date of birth.
+	date of death.
+	location of birth.
+	current location.
+	images from various sets.
+	images in general.
+5. info about movies including:
+	clips from the movie.
+	promotional images of the movie.
+	snapshots from the movie.
+	length of movie.
+	title in various countries.
+	Number of sub releases (different cuts).
+	how much did the movie cost.
+6. interview with people in the industry (actors, directors etc...)
+	attached to the poeple. with the date of the interview.
+7. scripts (if you can find them).
+8. various types of verification of the date.
+9. links to IMDB, Amazon etc...
+10. collection and confirmation from various sources.
+
+Scripts
+=======
+Tool to "suck in" IMDB...:)
+Tool to tell you what you like ? (taste matching)
+Tool to add merge two such databases (mine and my friends).
+Tool to get new movies off of IMDB.
+
+QUERY EXAMPLES:
+===============
+-an example of a query to query all film names of a certain person:
+	select t_title.f_name from t_title,t_person_title_role,t_person where t_title.f_id=t_person_title_role.f_title_id and t_person_title_role.f_person_id=t_person.f_id and t_person.f_firstname="Martin" and t_person.f_surname="Scorsese";
+-if you which to say that the role was specificly a director:
+	select t_title.f_name from t_title,t_person_title_role,t_person,t_role where t_title.f_id=t_person_title_role.f_title_id and t_person_title_role.f_person_id=t_person.f_id and t_person.f_firstname="Martin"and t_person.f_surname="Scorsese" and t_person_title_role.f_role_id=t_role.f_id and t_role.f_name="Director";
+-to find out all directors of a certain movie:
+	select t_person.f_firstname, t_person.f_surname from t_role,t_person,t_person_title_role,t_title where t_person.f_id=t_person_title_role.f_person_id and t_person_title_role.f_title_id=t_title.f_id and t_title.f_name="New York Stories" and t_person_title_role.f_role_id=t_role.f_id and t_role.f_name="Director";
+-just to show a list of films and the people working on them:
+	select t_person.f_firstname,t_person.f_surname,t_title.f_name,t_role.f_name from t_person,t_title,t_role,t_person_title_role where t_person.f_id=t_person_title_role.f_person_id and t_title.f_id=t_person_title_role.f_title_id and t_role.f_id=t_person_title_role.f_role_id limit 30;
+-just to show record of a certain film:
+	select * from t_title where t_title.f_name="The Godfather";
+
+TODO
+====
+0. test script on this entire project which runs the above sqls and checks the results.
+1. cover jpg.
+2. cover url.
+3. year of release (use dbdef field type year).
+4. many genres per title.
+5. tagline (string).
+6. rating (float).
+7. extra info film on role in title (for the name of the character).
+8. imdb id for actors and for titleis.
+9. duration (in seconds).
+10. country reference with list of countries.
+11. language reference with list of languages.
+12. Summary (text).
+13. certifications (per country).
+14. add Imdb id for people (inherit from the person table in people).
+15. make a script which only prints names of unauthorized movies
+16. put all movies into xml.
+17. mark all the movies that I have in my collection.
+18. do an example query which looks for movies which have a certain pattern in their
+	name (example of the fulltext capability).
