@@ -1,7 +1,13 @@
-monday:
-	- finish the slihot song.
-	- finish dorons riddle.
-	- review the new shlomi material.
+tuesday:
+	- finish reading the slides.
+	- do something for my projects.
+
+	- finish the slihot song and the ill close my eyes song.
+	- do something for myworld.
+	- fix headlight.
+	- read the rest of the dba material.
+	- see movie.
+	- one thing in the p project.
 
 	- add images to ttc and show ttc images in data.
 	- add images to people and show people images in data.
