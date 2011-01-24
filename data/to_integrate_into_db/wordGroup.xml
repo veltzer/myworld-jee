@@ -1,5 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<dataset>
-  <wordGroup id="1" name="mysql" description="mysql reserved words as taken from the mysql manual" added="2007-06-22 20:02:53.0"/>
-  <wordGroup id="2" name="pg" description="pg reserved words as taken from the pg manual" added="2007-06-22 20:02:53.0"/>
-</dataset>

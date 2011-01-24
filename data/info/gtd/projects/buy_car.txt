@@ -1,9 +1,0 @@
-electric driver side side mirror.
-fix light on gears.
-small light inside the car doesn't have a switch.
-lock at right door (not driver side) is broken because of forced entry.
-lock of baggage area is broken because of forced entry.
-license plate number at the front is broken.
-speakers at the front of the car are problematic.
-do waxing of the car.
-opener for baggage compartment does not work.
