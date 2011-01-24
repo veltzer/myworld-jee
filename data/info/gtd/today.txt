@@ -1,8 +1,51 @@
-tuesday:
-	- finish reading the slides.
-	- do something for my projects.
+sunday:
+	- finish the philosophy book and mark it down.
+	- add external ids for people, show them on the web and see that they work.
+	- add external ids for all people.
+	- buy phone for home.
+	- one more song in the ly project.
+	- night walk with lectures.
 
-	- finish the slihot song and the ill close my eyes song.
+weekend:
+	- do an example of JNI in my java examples (do it in a big folder).
+	- do example of java git debugging.
+	- finish the video phil of science course.
+	- read the phil book.
+	- two night walks.
+	- see two movies.
+	- do one piece of coding for myworld.
+	- break into the iphone.
+
+tuesday:
+	- call to insurance.
+	evening:
+	- buy a phone.
+
+	- release one song.
+	- see one more movie.
+	- read the philosophy material.
+	- play the computer game and mark it.
+	- do something for my projects (import all of some kind).
+	- night walk with lectures.
+	- send shay 5 phones for easy dial.
+	- get some kernel usb and networking material, integrate it and learn it.
+
+sunday:
+	- talk to the insurance agents.
+
+	- finish one tune well.
+	- order the house.
+	- see one more movies.
+	- finish the slihot song and the ill close my eyes song and another song that I already have in my collection.
+
+	- move contacts from my old cell phone to my database.
+	- move contacts from my database to my new cellphone.
+	- finish reading the dba slides.
+	- do something for my projects.
+	- see at least one movie.
+	- take care of my head light.
+	- take care of two of my in_tray emails.
+
 	- do something for myworld.
 	- fix headlight.
 	- read the rest of the dba material.

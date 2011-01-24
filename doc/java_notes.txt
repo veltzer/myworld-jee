@@ -1,8 +1,0 @@
-1. To install a third party jar into the local repository:
-	mvn install:install-file -Dfile=JID3.jar -DgroupId=local -DartifactId=jid3 -Dversion=0.46 -Dpackaging=jar -DgeneratePom=true
-
-2. How to make netbeans see the right docs.
-	a. pack the javadoc package into a jar file with index at the root.
-	b. point netbeans to it as the jars javadoc.
-	c. check it out with netbeans "view javadoc" feature.
-	d. you should now have intelisense javadocs.
