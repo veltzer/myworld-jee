@@ -20,7 +20,7 @@ public class Conf {
 	public String getString(ConfId id) {
 		switch(id) {
 			case CONF_TWITTER_PASSWORD: 
-				return "kingcrim";
+				return "";
 			case CONF_TWITTER_USERID:
 				return "veltzer";
 			case CONF_TWITTER_USERAGENT:
@@ -28,11 +28,11 @@ public class Conf {
 			case CONF_TWITTER_SOURCE:
 				return "MyWorld";
 			case CONF_TWITTER_CONSUMER:
-				return "a6oAdUX6UyIu2Tfp2LlttA";
+				return "";
 			case CONF_TWITTER_CONSUMER_SECRET:
-				return "rZMzqhLI6y7YTqo5Bw3OdboEfmQ93OjSfLxlF7omWA";
+				return "";
 			case CONF_TWITTER_TOKEN_FILE:
-				return "twitter.token";
+				return "~/.twitter.token";
 		}
 		// this is unreachable code...
 		throw new RuntimeException("cannot find conf id "+id);
