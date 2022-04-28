@@ -2,10 +2,10 @@
 all: tools.stamp
 	@true
 
-tools.stamp: config/deps.py
+tools.stamp: packages.txt config/deps.py
 	$(info doing [$@])
-	@pymakehelper touch_mkdir $@
+	$(Q)pymakehelper touch_mkdir $@
 
-.PHONY: clean
-clean:
-	@git clean -qffxd
+.PHONY: clean_hard
+clean_hard:
+	$(Q)git clean -qffxd
