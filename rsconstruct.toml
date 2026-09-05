@@ -15,6 +15,43 @@ src_dirs = ["src"]
 [processor.tidy]
 src_dirs = ["src"]
 
+[analyzer.python]
+
+[processor.ruff]
+src_dirs = ["scripts"]
+
+[processor.pylint]
+src_dirs = ["scripts"]
+
+[processor.mypy]
+src_dirs = ["scripts"]
+
+# ─── repo-specific configuration ────────────────────────────────────────────
+
+# The NetBeans/ant build compiled src/main/java against jars from the Debian
+# java packages plus libs/jars, then the tests against that and junit.
+# scripts/javac_build.py runs the same two javac invocations into out/.
+[processor.explicit.java]
+command = "scripts/javac_build.py"
+input_globs = ["src/main/java/**/*.java", "src/test/java/**/*.java", "libs/jars/*.jar"]
+inputs = ["scripts/javac_build.py"]
+output_dirs = ["out/classes", "out/test-classes"]
+
+# the Debian packages that provide the /usr/share/java jars the build uses
+[dependencies]
+system = [
+    "libcommons-io-java",
+    "libcommons-lang-java",
+    "libjna-java",
+    "libtrove-java",
+    "libgetopt-java",
+    "libtrilead-ssh2-java",
+    "libtritonus-java",
+    "libmp3spi-java",
+    "libjlayer-java",
+    "junit4",
+]
+
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
