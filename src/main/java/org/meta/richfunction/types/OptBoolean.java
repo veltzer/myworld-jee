@@ -99,7 +99,7 @@ public class OptBoolean implements Option<Boolean> {
 	 */
 	@Override
 	public String StringFromValue(Boolean val) {
-		if(val.booleanValue()==true) {
+		if(val.booleanValue()) {
 			return "true";
 		} else {
 			return "false";

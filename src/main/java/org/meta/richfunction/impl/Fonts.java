@@ -1,7 +1,6 @@
 package org.meta.richfunction.impl;
 
 import java.awt.Font;
-import java.awt.GraphicsEnvironment;
 import org.meta.richfunction.Arguments;
 import org.meta.richfunction.RichFunction;
 import org.meta.progress.Progress;

@@ -68,7 +68,7 @@ public class Tweet extends RichFunction {
 		p.fini();
 	}
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		try {
 			Twitter twitter = new Twitter();
 			twitter.setOAuthConsumer(Conf.getInstance().getString(ConfId.CONF_TWITTER_CONSUMER), Conf.getInstance().getString(ConfId.CONF_TWITTER_CONSUMER_SECRET));

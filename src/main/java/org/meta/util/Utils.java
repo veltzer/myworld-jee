@@ -101,7 +101,7 @@ public class Utils {
 	 */
 	public static void rename(File oldfile,File newfile) {
 		boolean suc=oldfile.renameTo(newfile);
-		if(suc==false) {
+		if(!suc) {
 			throw new RuntimeException("cannot rename "+oldfile.getAbsolutePath()+" to "+newfile.getAbsolutePath());
 		}
 	}
@@ -158,7 +158,7 @@ public class Utils {
 	 */
 	public static void delete(File f) {
 		boolean val=f.delete();
-		if(val==false) {
+		if(!val) {
 			throw new RuntimeException("could not delete file ["+getCannonicalPath(f)+"]");
 		}
 	}

@@ -28,7 +28,7 @@ public class FilterAnd<E> implements IFilter<E> {
 		for(IFilter<E> x:filters) {
 			accept=accept && x.accept(e);
 			// short cut the calculation
-			if(accept==false) {
+			if(!accept) {
 				continue;
 			}
 		}

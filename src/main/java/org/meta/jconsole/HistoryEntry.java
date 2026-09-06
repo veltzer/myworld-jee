@@ -24,7 +24,7 @@ public class HistoryEntry {
 	 * @param aCmd
 	 * @param args
 	 */
-	public HistoryEntry(String aCmdString, ConsoleCommand aCmd, String args[]) {
+	public HistoryEntry(String aCmdString, ConsoleCommand aCmd, String[] args) {
 		m_cmdString=aCmdString;
 		m_cmd=aCmd;
 		m_args=args;

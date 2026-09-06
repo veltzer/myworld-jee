@@ -120,12 +120,12 @@ public class Commands {
 	 * TODO: try to see if there is a way to make this automatic...
 	 */
 	public void shutdown(boolean aggressive,boolean wait) {
-		if(aggressive==true) {
+		if(aggressive) {
 			es.shutdownNow();
 		} else {
 			es.shutdown();
 		}
-		if(wait==true) {
+		if(wait) {
 			try {
 				es.awaitTermination(10000000, TimeUnit.SECONDS);
 			} catch (InterruptedException ex) {

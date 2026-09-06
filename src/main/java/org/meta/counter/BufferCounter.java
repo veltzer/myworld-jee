@@ -31,7 +31,7 @@ public class BufferCounter implements Counter {
 	 */
 	public BufferCounter(int isize) {
 		size=isize;
-		if(direct==true) {
+		if(direct) {
 			buf=ByteBuffer.allocateDirect(size*4);
 		} else {
 			buf=ByteBuffer.allocate(size*4);

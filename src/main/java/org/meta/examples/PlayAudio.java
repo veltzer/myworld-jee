@@ -230,9 +230,11 @@ public class PlayAudio
 			{
 			case 'h':
 				printUsageAndExit();
+				break;
 
 			case 'l':
 				AudioCommon.listMixersAndExit(true);
+				break;
 
 			case 'u':
 				bInterpretFilenameAsUrl = true;
@@ -284,6 +286,7 @@ public class PlayAudio
 
 			case '?':
 				printUsageAndExit();
+				break;
 
 			default:
 				out("getopt() returned " + c);

@@ -1,8 +1,7 @@
 # rsconstruct build configuration for this repository.
 
 [processor.shellcheck]
-src_dirs = ["scripts", "src"]
-args = ["--severity=error", "--shell=bash"]
+src_dirs = ["scripts", "src", "src.old/build"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
@@ -55,3 +54,20 @@ system = [
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]
 src_dirs = [".github/workflows"]
+
+# ─── markdown ────────────────────────────────────────────────────────────────
+
+[processor.rumdl]
+src_files = ["README.md"]
+
+# ─── xml / svg ───────────────────────────────────────────────────────────────
+
+[processor.xmllint]
+src_dirs = ["src/main", "src.old/build"]
+
+# ─── java ────────────────────────────────────────────────────────────────────
+
+# not linted: libs/download/mp3_examples (downloaded third-party examples)
+[processor.checkstyle]
+src_dirs = ["src", "src.old/src/old/meta"]
+args = ["-c", "checkstyle.xml"]

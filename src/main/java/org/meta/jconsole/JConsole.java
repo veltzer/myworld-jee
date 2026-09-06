@@ -384,7 +384,7 @@ public class JConsole implements Runnable {
 
 		ConsoleCommand cmd = getCommand(cmdRun);
 
-		if (line.startsWith("!") == false && cmd != null) {
+		if (!line.startsWith("!") && cmd != null) {
 			m_histryRWList.add( new HistoryEntry( line, cmd, arr ) );
 		}
 

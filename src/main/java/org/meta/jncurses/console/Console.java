@@ -99,7 +99,7 @@ public class Console implements IProgressEventProcessor {
 	protected void downOneLine() {
 	}
 	protected void editCmd() {
-		if(in_cmd==false) {
+		if(!in_cmd) {
 			cmd.setLength(0);
 			cmd.append(history.get(hist_index));
 			in_cmd=true;
