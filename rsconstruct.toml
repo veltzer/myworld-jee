@@ -10,7 +10,7 @@ src_dirs = ["scripts", "src", "src.old/build"]
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
 [processor.taplo]
-src_files = [".rumdl.toml", "rsconstruct.toml"]
+src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
 [processor.htmlhint]
 src_dirs = ["src"]
