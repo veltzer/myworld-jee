@@ -4,24 +4,24 @@
 # src_dirs entries name directories; "." (the whole tree) is a config error
 reject_dot_src_dirs = true
 
-[processor.shellcheck]
+[processor.checker.shellcheck]
 src_dirs = ["scripts", "src", "src.old/build"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
 
-[processor.taplo]
+[processor.checker.taplo]
 src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
-[processor.tidy]
+[processor.checker.tidy]
 src_dirs = ["src"]
 
 [analyzer.python]
 
-[processor.ruff]
+[processor.checker.ruff]
 src_dirs = ["scripts"]
 
 
-[processor.mypy]
+[processor.checker.mypy]
 src_dirs = ["scripts"]
 
 # ─── repo-specific configuration ────────────────────────────────────────────
@@ -29,7 +29,7 @@ src_dirs = ["scripts"]
 # The NetBeans/ant build compiled src/main/java against jars from the Debian
 # java packages plus libs/jars, then the tests against that and junit.
 # scripts/javac_build.py runs the same two javac invocations into out/.
-[processor.explicit.java]
+[processor.explicit.generic.java]
 command = "scripts/javac_build.py"
 input_globs = ["src/main/java/**/*.java", "src/test/java/**/*.java", "libs/jars/*.jar"]
 inputs = ["scripts/javac_build.py"]
@@ -51,22 +51,22 @@ system = [
 ]
 
 # lint the GitHub Actions workflow files with actionlint
-[processor.actionlint]
+[processor.checker.actionlint]
 src_dirs = [".github/workflows"]
 
 # ─── markdown ────────────────────────────────────────────────────────────────
 
-[processor.rumdl]
+[processor.checker.rumdl]
 src_files = ["README.md"]
 
 # ─── xml / svg ───────────────────────────────────────────────────────────────
 
-[processor.xmllint]
+[processor.checker.xmllint]
 src_dirs = ["src/main", "src.old/build"]
 
 # ─── java ────────────────────────────────────────────────────────────────────
 
 # not linted: libs/download/mp3_examples (downloaded third-party examples)
-[processor.checkstyle]
+[processor.checker.checkstyle]
 src_dirs = ["src", "src.old/src/old/meta"]
 args = ["-c", "checkstyle.xml"]
