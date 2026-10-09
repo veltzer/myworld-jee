@@ -12,7 +12,7 @@ src_dirs = ["scripts", "src", "src.old/build"]
 [processor.checker.taplo]
 src_files = [".rumdl.toml", "pyproject.toml", "rsconstruct.toml"]
 
-[processor.checker.tidy]
+[processor.checker.itidy]
 src_dirs = ["src"]
 
 [analyzer.python]
