@@ -4,7 +4,7 @@
 # src_dirs entries name directories; "." (the whole tree) is a config error
 reject_dot_src_dirs = true
 
-[processor.checker.shellcheck]
+[processor.checker.ishellcheck]
 src_dirs = ["scripts", "src", "src.old/build"]
 
 # ─── toml / yaml / json ──────────────────────────────────────────────────────
@@ -67,6 +67,5 @@ src_dirs = ["src/main", "src.old/build"]
 # ─── java ────────────────────────────────────────────────────────────────────
 
 # not linted: libs/download/mp3_examples (downloaded third-party examples)
-[processor.checker.checkstyle]
+[processor.checker.icheckstyle]
 src_dirs = ["src", "src.old/src/old/meta"]
-args = ["-c", "checkstyle.xml"]
