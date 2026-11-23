@@ -50,12 +50,10 @@ def sources(root):
 def main():
     """ main entry point """
     os.makedirs(MAIN_OUT, exist_ok=True)
-    run(["javac", "-Xlint:unchecked", "-cp", classpath([]), "-d", MAIN_OUT]
-        + sources(os.path.join("src", "main", "java")))
+    run(["javac", "-Xlint:unchecked", "-cp", classpath([]), "-d", MAIN_OUT, *sources(os.path.join("src", "main", "java"))])
     os.makedirs(TEST_OUT, exist_ok=True)
     junit = os.path.join(JAVA_DIR, "junit4.jar")
-    run(["javac", "-Xlint:unchecked", "-cp", classpath([MAIN_OUT, junit]),
-         "-d", TEST_OUT] + sources(os.path.join("src", "test", "java")))
+    run(["javac", "-Xlint:unchecked", "-cp", classpath([MAIN_OUT, junit]), "-d", TEST_OUT, *sources(os.path.join("src", "test", "java"))])
 
 
 if __name__ == "__main__":
