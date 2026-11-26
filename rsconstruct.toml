@@ -90,3 +90,8 @@ src_dirs = ["src/main", "src.old/build"]
 # not linted: libs/download/mp3_examples (downloaded third-party examples)
 [processor.checker.icheckstyle]
 src_dirs = ["src", "src.old/src/old/meta"]
+
+# every lint suppression names a rule and says why (see the fleet's CLAUDE.md)
+[processor.checker.suppressions]
+src_dirs = [".github", "config", "scripts", "src", "src.old/build", "src.old/src/old/meta"]
+src_files = [".yamllint.yaml", "README.md"]
