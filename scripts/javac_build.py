@@ -25,14 +25,14 @@ MAIN_OUT = os.path.join("out", "classes")
 TEST_OUT = os.path.join("out", "test-classes")
 
 
-def run(args):
+def run(args: list[str]) -> None:
     """ run a command, aborting the build on failure """
     ret = subprocess.call(args)
     if ret != 0:
         sys.exit(ret)
 
 
-def classpath(extra):
+def classpath(extra: list[str]) -> str:
     """ the jars the sources compile against """
     jars = [os.path.join(JAVA_DIR, f"{name}.jar") for name in SYSTEM_JARS]
     jars += sorted(glob.glob(os.path.join("libs", "jars", "*.jar")))
@@ -42,12 +42,12 @@ def classpath(extra):
     return os.pathsep.join(jars + extra)
 
 
-def sources(root):
+def sources(root: str) -> list[str]:
     """ every java file under root """
     return sorted(glob.glob(os.path.join(root, "**", "*.java"), recursive=True))
 
 
-def main():
+def main() -> None:
     """ main entry point """
     os.makedirs(MAIN_OUT, exist_ok=True)
     run(["javac", "-Xlint:unchecked", "-cp", classpath([]), "-d", MAIN_OUT, *sources(os.path.join("src", "main", "java"))])
